@@ -378,7 +378,10 @@ header div ul li a {
   text-decoration: none;
   position: relative;
   display: inline-block;
- 
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
   text-transform: uppercase;
   transition: 0.5s;
   letter-spacing: 4px;
@@ -422,7 +425,7 @@ header div ul li a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 4px;
+  height: 6px;
   background: linear-gradient(90deg, transparent, rgb(253, 169, 183));
   animation: animate1 1s linear infinite;
 }
@@ -430,7 +433,7 @@ header div ul li a {
 .first-prize span:nth-child(2) {
   top: -100%;
   right: 0;
-  width: 4px;
+  width: 6px;
   height: 100%;
   background: linear-gradient(180deg, transparent, rgb(253, 169, 183));
   animation: animate2 1s linear infinite;
@@ -441,7 +444,7 @@ header div ul li a {
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 4px;
+  height: 6px;
   background: linear-gradient(270deg, transparent, rgb(253, 169, 183));
   animation: animate3 1s linear infinite;
   animation-delay: 0.5s;
@@ -450,7 +453,7 @@ header div ul li a {
 .first-prize span:nth-child(4) {
   bottom: -100%;
   left: 0;
-  width: 4px;
+  width: 6px;
   height: 100%;
   background: linear-gradient(360deg, transparent, rgb(253, 169, 183));
   animation: animate4 1s linear infinite;
@@ -474,7 +477,7 @@ header div ul li a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 4px;
+  height: 6px;
   background: linear-gradient(90deg, transparent, #c0c0c0);
   animation: animate1 1s linear infinite;
 }
@@ -482,7 +485,7 @@ header div ul li a {
 .sec-prize span:nth-child(2) {
   top: -100%;
   right: 0;
-  width: 4px;
+  width: 6px;
   height: 100%;
   background: linear-gradient(180deg, transparent, #c0c0c0);
   animation: animate2 1s linear infinite;
@@ -493,7 +496,7 @@ header div ul li a {
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 4px;
+  height: 6px;
   background: linear-gradient(270deg, transparent, #c0c0c0);
   animation: animate3 1s linear infinite;
   animation-delay: 0.5s;
@@ -502,7 +505,7 @@ header div ul li a {
 .sec-prize span:nth-child(4) {
   bottom: -100%;
   left: 0;
-  width: 4px;
+  width: 6px;
   height: 100%;
   background: linear-gradient(360deg, transparent, #c0c0c0);
   animation: animate4 1s linear infinite;
@@ -526,7 +529,7 @@ header div ul li a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 4px;
+  height: 6px;
   background: linear-gradient(90deg, transparent, rgb(189, 98, 98));
   animation: animate1 1s linear infinite;
 }
@@ -534,7 +537,7 @@ header div ul li a {
 .third-prize span:nth-child(2) {
   top: -100%;
   right: 0;
-  width: 4px;
+  width: 6px;
   height: 100%;
   background: linear-gradient(180deg, transparent, rgb(189, 98, 98));
   animation: animate2 1s linear infinite;
@@ -545,7 +548,7 @@ header div ul li a {
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 4px;
+  height: 6px;
   background: linear-gradient(270deg, transparent, rgb(189, 98, 98));
   animation: animate3 1s linear infinite;
   animation-delay: 0.5s;
@@ -554,7 +557,7 @@ header div ul li a {
 .third-prize span:nth-child(4) {
   bottom: -100%;
   left: 0;
-  width: 4px;
+  width: 6px;
   height: 100%;
   background: linear-gradient(360deg, transparent, rgb(189, 98, 98));
   animation: animate4 1s linear infinite;
