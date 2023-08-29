@@ -36,11 +36,12 @@
   height: 70px;
   filter: invert(75%) sepia(56%) saturate(4454%) hue-rotate(1deg) brightness(106%) contrast(104%);
   z-index: 1001;
-  transition: ease 0.1s;
+  transition: ease 0.25s;
 }
 
 .go-top-btn img:hover{
   filter: invert(80%) sepia(39%) saturate(6561%) hue-rotate(137deg) brightness(107%) contrast(98%);
+  transform: scale(1.1);
 }
 
 /* BODY */
