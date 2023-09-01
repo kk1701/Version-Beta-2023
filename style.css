@@ -1,23 +1,25 @@
 /* SCROLL BAR */
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 12px;
 
 }
-::-webkit-scrollbar-thumb{
-  background: linear-gradient(transparent,#03e9f4);
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #03e9f4);
   border-radius: 3px;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
   background-color: black;
 }
 
 /* GO TO TOP */
 
-.go-top-btn{
+.go-top-btn {
   position: fixed;
-  right: 40px;
-  bottom: 40px;
+  right: 20px;
+  bottom: 30px;
   border-radius: 50%;
   border-style: none;
   cursor: pointer;
@@ -31,22 +33,22 @@
   text-decoration: none;
 }
 
-.go-top-btn img{
-  width: 70px;
-  height: 70px;
+.go-top-btn img {
+  width: 55px;
+  height: 60px;
   filter: invert(75%) sepia(56%) saturate(4454%) hue-rotate(1deg) brightness(106%) contrast(104%);
   z-index: 1001;
   transition: ease 0.25s;
 }
 
-.go-top-btn img:hover{
+.go-top-btn img:hover {
   filter: invert(80%) sepia(39%) saturate(6561%) hue-rotate(137deg) brightness(107%) contrast(98%);
   transform: scale(1.1);
 }
 
 /* BODY */
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -74,11 +76,6 @@ body {
   filter: grayscale(70%);
 }
 
-.logo {
-  position: relative;
-  left: 10px;
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -86,8 +83,14 @@ header {
   height: 50px;
   width: 100vw;
   background-color: rgb(0, 8, 44);
+  /* opacity: 0.7; */
   position: fixed;
   z-index: 2;
+}
+
+.logo {
+  position: relative;
+  left: 10px;
 }
 
 header div ul {
@@ -110,7 +113,7 @@ header div ul li a {
   left: 150px;
 }
 
-.version{
+.version {
   position: relative;
   top: 180px;
   left: 345px;
@@ -125,7 +128,7 @@ header div ul li a {
   }
 }
 
-.version-beta{
+.version-beta {
   display: inline-block;
   opacity: 0;
   filter: blur(4px);
@@ -150,17 +153,17 @@ header div ul li a {
   }
 }
 
-#beta{
+#beta {
   color: red;
   font-size: 23px;
   font-style: italic;
 }
 
-#version{
+#version {
   font-style: italic;
 }
 
-#number{
+#number {
   font-weight: bold;
 }
 
@@ -177,16 +180,38 @@ header div ul li a {
   border-radius: 10px;
 } */
 
-.clock {
+.clock_desc{
   position: absolute;
-  right: 200px;
-  top: 300px;
+  right: 240px;
+  top: 280px;
   font-size: 18px;
 }
 
-.clock_digit {
+#clock {
+  position: absolute;
+  right: 150px;
+  top: 360px;
+  font-size: 18px;
+  background-color: var(--primary);
+  background-image: linear-gradient(-45degree, hsla(var(--hue), 10%, 10%, 0hsla(var(--hue), 10%, 10%, 0.2)),);
+  border-radius: 8px;
+  box-shadow: 0 0 0 0.1rem hsla(var(--hue), 10%, 10%, 0.2) inset;
+  color: hsl(var(--hue), 10%, 100%);
+  display: flex;
+  justify-content: center;
+  gap: 2px;
   font-size: 40px;
-  /* background-color: #03e9f4; */
+  line-height: 1;
+  font-weight: bold;
+}
+
+.timeleft{
+  display: flex;
+  gap: 22px;
+  position: absolute;
+  right: 130px;
+  bottom: 230px;
+  font-size: 18px;
 }
 
 #about {
@@ -205,10 +230,10 @@ header div ul li a {
   top: 420px;
 }
 
-.about_info{
-  font-family: 'Poppins',sans-serif;
+.about_info {
+  font-family: 'Poppins', sans-serif;
   font-style: italic;
-  color: #03e9f4;
+  color: whitesmoke;
   text-align: justify;
 }
 
@@ -383,7 +408,7 @@ header div ul li a {
   margin-top: 70px;
 }
 
-.prizes_heading {
+#prizes_heading {
   text-align: center;
   color: whitesmoke;
   font-size: 40px;
@@ -414,47 +439,48 @@ header div ul li a {
 .first-prize {
   color: rgb(253, 169, 183);
   font-size: 20px;
+  border-radius: 15px;
 }
 
 .sec-prize {
   color: #c0c0c0;
   font-size: 20px;
+  border-radius: 15px;
 }
 
 .third-prize {
   color: rgb(189, 98, 98);
   font-size: 20px;
+  border-radius: 15px;
 }
 
 .prizes div a {
   text-decoration: none;
   position: relative;
+  top: 20px;
   display: inline-block;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 20px;
   text-transform: uppercase;
   transition: 0.4s;
   letter-spacing: 4px;
   overflow: hidden;
 }
 
-.sec-prize:hover {
+.second:hover .sec-prize{
   background: #c0c0c0;
   color: lightcyan;
   box-shadow: 0 0 5px #c0c0c0, 0 0 25px #c0c0c0, 0 0 50px #c0c0c0,
     0 0 200px #c0c0c0;
 }
 
-.first-prize:hover {
+.first:hover .first-prize{
   background: rgb(253, 169, 183);
   color: lightcyan;
   box-shadow: 0 0 5px rgb(253, 169, 183), 0 0 25px rgb(253, 169, 183),
     0 0 50px rgb(253, 169, 183), 0 0 200px rgb(253, 169, 183);
 }
 
-.third-prize:hover {
+.third:hover .third-prize{
   background: rgb(189, 98, 98);
   color: lightcyan;
   box-shadow: 0 0 5px rgb(189, 98, 98), 0 0 25px rgb(189, 98, 98), 0 0 50px rgb(189, 98, 98), 0 0 200px rgb(189, 98, 98);
@@ -479,7 +505,7 @@ header div ul li a {
   width: 100%;
   height: 6px;
   background: linear-gradient(90deg, transparent, rgb(253, 169, 183));
-  animation: animate1 2s linear infinite;
+  animation: animate1 1s linear infinite;
 }
 
 .first-prize span:nth-child(2) {
@@ -488,8 +514,8 @@ header div ul li a {
   width: 6px;
   height: 100%;
   background: linear-gradient(180deg, transparent, rgb(253, 169, 183));
-  animation: animate2 2s linear infinite;
-  animation-delay: 0.5s;
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
 }
 
 .first-prize span:nth-child(3) {
@@ -498,8 +524,8 @@ header div ul li a {
   width: 100%;
   height: 6px;
   background: linear-gradient(270deg, transparent, rgb(253, 169, 183));
-  animation: animate3 2s linear infinite;
-  animation-delay: 1s;
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
 }
 
 .first-prize span:nth-child(4) {
@@ -508,8 +534,8 @@ header div ul li a {
   width: 6px;
   height: 100%;
   background: linear-gradient(360deg, transparent, rgb(253, 169, 183));
-  animation: animate4 2s linear infinite;
-  animation-delay: 1.5s;
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
 }
 
 .sec-prize:nth-child(1) {
@@ -531,7 +557,7 @@ header div ul li a {
   width: 100%;
   height: 6px;
   background: linear-gradient(90deg, transparent, #c0c0c0);
-  animation: animate1 2s linear infinite;
+  animation: animate1 1s linear infinite;
 }
 
 .sec-prize span:nth-child(2) {
@@ -540,8 +566,8 @@ header div ul li a {
   width: 6px;
   height: 100%;
   background: linear-gradient(180deg, transparent, #c0c0c0);
-  animation: animate2 2s linear infinite;
-  animation-delay: 0.5s;
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
 }
 
 .sec-prize span:nth-child(3) {
@@ -551,7 +577,7 @@ header div ul li a {
   height: 6px;
   background: linear-gradient(270deg, transparent, #c0c0c0);
   animation: animate3 2s linear infinite;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 .sec-prize span:nth-child(4) {
@@ -560,8 +586,8 @@ header div ul li a {
   width: 6px;
   height: 100%;
   background: linear-gradient(360deg, transparent, #c0c0c0);
-  animation: animate4 2s linear infinite;
-  animation-delay: 1.5s;
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
 }
 
 .third-prize:nth-child(1) {
@@ -583,7 +609,7 @@ header div ul li a {
   width: 100%;
   height: 6px;
   background: linear-gradient(90deg, transparent, rgb(189, 98, 98));
-  animation: animate1 2s linear infinite;
+  animation: animate1 1s linear infinite;
 }
 
 .third-prize span:nth-child(2) {
@@ -592,8 +618,8 @@ header div ul li a {
   width: 6px;
   height: 100%;
   background: linear-gradient(180deg, transparent, rgb(189, 98, 98));
-  animation: animate2 2s linear infinite;
-  animation-delay: 0.5s;
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
 }
 
 .third-prize span:nth-child(3) {
@@ -602,8 +628,8 @@ header div ul li a {
   width: 100%;
   height: 6px;
   background: linear-gradient(270deg, transparent, rgb(189, 98, 98));
-  animation: animate3 2s linear infinite;
-  animation-delay: 1s;
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
 }
 
 .third-prize span:nth-child(4) {
@@ -612,8 +638,8 @@ header div ul li a {
   width: 6px;
   height: 100%;
   background: linear-gradient(360deg, transparent, rgb(189, 98, 98));
-  animation: animate4 2s linear infinite;
-  animation-delay: 1.5s;
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
 }
 
 @keyframes animate1 {
@@ -679,7 +705,7 @@ header div ul li a {
   top: 500px;
 }
 
-.title_faq {
+#title_faq {
   font-size: 40px;
   color: whitesmoke;
   margin: 2rem 0rem;
@@ -754,8 +780,7 @@ svg {
 
 .footer_container {
   display: flex;
-  height: 6
-  00px;
+  height: 6 00px;
   background-color: #05070b;
   flex-direction: column;
   justify-content: center;
@@ -768,7 +793,8 @@ svg {
 .emailID,
 .footer_1st,
 .footer_2nd,
-.footer_3rd,.header_content{
+.footer_3rd,
+.header_content {
   text-decoration: none;
   cursor: pointer;
   margin: 0;
@@ -818,7 +844,8 @@ hr {
   margin-top: 15px;
 }
 
-.name1,.name2{
+.name1,
+.name2 {
   margin-bottom: 0;
 }
 
@@ -887,7 +914,7 @@ hr {
 .number,
 .emailID,
 .site,
-.mact{
+.mact {
   background-image: linear-gradient(to right,
       #03e9f4,
       #03e9f4 50%,
@@ -905,7 +932,7 @@ hr {
 .number:before,
 .emailID:before,
 .site:before,
-.mact:before{
+.mact:before {
   content: '';
   background: #03e9f4;
   display: block;
@@ -920,31 +947,31 @@ hr {
 .number:hover,
 .emailID:hover,
 .site:hover,
-.mact:hover{
+.mact:hover {
   background-position: 0;
 }
 
 .number:hover::before,
 .emailID:hover::before,
 .site:hover::before,
-.mact:hover::before{
+.mact:hover::before {
   width: 100%;
 }
 
 
 /* REGISTER BUTTON */
-.wrapper{
+.wrapper {
   position: absolute;
-  top: 67%;
-  left: 29%;
+  top: 500px;
+  left: 440px;
   transform: translate(-50%, -50%);
 }
 
-.link_wrapper{
+.link_wrapper {
   position: relative;
 }
 
-.button-register{
+.button-register {
   display: block;
   width: 250px;
   height: 50px;
@@ -962,7 +989,7 @@ hr {
   font-size: 18px;
 }
 
-.icon{
+.icon {
   width: 50px;
   height: 50px;
   border: 3px solid transparent;
@@ -974,7 +1001,7 @@ hr {
   transition: all .35s;
 }
 
-.icon svg{
+.icon svg {
   width: 30px;
   position: absolute;
   top: calc(50% - 15px);
@@ -984,37 +1011,42 @@ hr {
   transition: all .35s;
 }
 
-.button-register:hover{
+.button-register:hover {
   width: 200px;
   border: 3px solid #ff5254;
   background: transparent;
   color: white;
 }
 
-.button-register:hover + .icon{
+.button-register:hover+.icon {
   border: 3px solid #ff5254;
   right: -25%;
 }
 
 @keyframes float {
   0% {
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(0px);
   }
+
   50% {
-    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
     transform: translatey(-25px);
   }
+
   100% {
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(0px);
   }
 }
 
-.versionbeta_logo{
+.versionbeta_logo {
   animation: float 3s ease-in-out infinite;
 }
 
-.title_faq,.prizes_heading,#about,#schedule_heading{
+.title_faq,
+.prizes_heading,
+#about,
+#schedule_heading {
   color: #03e9f4;
 }
