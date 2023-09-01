@@ -18,9 +18,9 @@
 
     </div>
     
-    <a href = "#" class="go-top-btn">
+    <button class="go-top-btn" id="go-top-btn" onclick="scrollToTop()">
       <img src="Assets/rocket.png" alt="rocket">
-    </a>
+    </button>
 
     <video autoplay muted loop id="myVideo">
       <source src="./Assets/140578 (Original).mp4" type="video/mp4" />
@@ -435,7 +435,7 @@
       // script.js
 document.addEventListener("DOMContentLoaded", function () {
     // Set the timeout in milliseconds (e.g., 3000ms for 3 seconds)
-    const timeoutDuration = 5000;
+    const timeoutDuration = 4000;
 
     // Hide the preloader after the specified timeout
     setTimeout(function () {
@@ -447,6 +447,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
     </script>
-  
+    
+    <script>
+      window.addEventListener("scroll", toggleGoToTopButton);
+
+function toggleGoToTopButton() {
+    const goToTopButton = document.getElementById("go-top-btn");
+    if (window.scrollY >= 300) {
+        goToTopButton.classList.remove("hidden");
+    } else {
+        goToTopButton.classList.add("hidden");
+    }
+}
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+    </script>
+
   </body>
 </html>
