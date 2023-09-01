@@ -426,11 +426,25 @@
   
     <script>
 
-      var loader = document.getElementById("preloader");
+      // var loader = document.getElementById("preloader");
        
-       window.addEventListener("load", function(){
-          loader.style.display = "none";
-       });
+      //  window.addEventListener("load", function(){
+      //     loader.style.display = "none";
+      //  });
+      
+      // script.js
+document.addEventListener("DOMContentLoaded", function () {
+    // Set the timeout in milliseconds (e.g., 3000ms for 3 seconds)
+    const timeoutDuration = 5000;
+
+    // Hide the preloader after the specified timeout
+    setTimeout(function () {
+        const preloader = document.getElementById("preloader");
+        if (preloader) {
+            preloader.style.display = "none";
+        }
+    }, timeoutDuration);
+});
 
     </script>
   
