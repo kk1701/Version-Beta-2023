@@ -1,452 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Version Beta</title>
-  <link rel="stylesheet" href="./style.css" />
-  <script type="text/javascript" src="rocket.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap"
-    rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/75fe46b958.js" crossorigin="anonymous"></script>
-</head>
+    <title>Version Beta</title>
 
-<body>
-  <div id="preloader">
-    
-  </div>
-  
-  <button class="go-top-btn" id="go-top-btn" onclick="scrollToTop()">
-    <img src="Assets/rocket.png" alt="rocket" />
-  </button>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css">
 
-  <video autoplay muted loop id="myVideo">
-    <source src="./Assets/140578 (Original).mp4" type="video/mp4" />
-  </video>
+    <script type="text/javascript" src="rocket.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/75fe46b958.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <header>
-    <div class="logo">
-      <img src="./Assets/ISTE logo.svg" alt="ISTE LOGO" />
-    </div>
-    <div>
-      <ul>
-        <li><a href="#home_page" class="header_content">HOME</a></li>
-        <li><a href="#about" class="header_content">ABOUT</a></li>
-        <li>
-          <a href="#schedule_heading" class="header_content">SCHEDULE</a>
-        </li>
-        <li><a href="#prizes_heading" class="header_content">PRIZES</a></li>
-        <li><a href="#gallery_heading" class="header_content">GALLERY</a></li>
-        <li><a href="#sponsor_heading" class="header_content">SPONSORS</a></li>
-        <li><a href="#title_faq" class="header_content">FAQS</a></li>
-      </ul>
-    </div>
-  </header>
+  <body>
+    <div id="preloader"></div>
 
-  <section id="home_page">
-    <div class="left">
-      <div class="versionbeta_logo">
-        <img src="./Assets/VB LOGO--main.png" alt="version_beta" height="200px" />
+    <button class="go-top-btn" id="go-top-btn" onclick="scrollToTop()">
+      <img src="Assets/rocket.png" alt="rocket" />
+    </button>
+
+    <video autoplay muted loop id="bgvideo">
+      <source src="./Assets/140578 (Original).mp4" type="video/mp4" />
+    </video>
+
+    <header>
+      <div class="logo">
+        <img src="./Assets/ISTE logo.svg" alt="ISTE LOGO" />
       </div>
-      <p class="version">
-        <span class="version-beta" id="version">Version</span>
-        <span class="version-beta" id="beta">Beta</span>
-        <span class="version-beta" id="number">6.0</span>
-      </p>
-      <div class="wrapper">
-        <div class="link_wrapper">
-          <a href="#" class="button-register">Register Now</a>
-          <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832" class="arrow-svg">
-              <path
-                d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z" />
-            </svg>
+      <div>
+        <ul>
+          <li><a href="#home_page" class="header_content">HOME</a></li>
+          <li><a href="#about" class="header_content">ABOUT</a></li>
+          <li>
+            <a href="#schedule_heading" class="header_content">SCHEDULE</a>
+          </li>
+          <li><a href="#prizes_heading" class="header_content">PRIZES</a></li>
+          <li><a href="#gallery_heading" class="header_content">GALLERY</a></li>
+          <li>
+            <a href="#sponsor_heading" class="header_content">SPONSORS</a>
+          </li>
+          <li><a href="#title_faq" class="header_content">FAQS</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="home_page">
+      <div class="left">
+        <div class="versionbeta_logo">
+          <img
+            src="./Assets/VB LOGO--main.png"
+            alt="version_beta"
+            height="200px"
+          />
+        </div>
+        <p class="version">
+          <span class="version-beta" id="version">Version</span>
+          <span class="version-beta" id="beta">Beta</span>
+          <span class="version-beta" id="number">6.0</span>
+        </p>
+        <div class="wrapper">
+          <div class="link_wrapper">
+            <a href="#" class="button-register">Register Now</a>
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 268.832 268.832"
+                class="arrow-svg"
+              >
+                <path
+                  d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <p class="clock_desc">Registration starts in..</p>
-    <div id="clock">
-      <span class="clock_digit">0</span>
-      <span class="clock_digit">0</span>
-      <span class="clock_digit">:</span>
-      <span class="clock_digit">0</span>
-      <span class="clock_digit">0</span>
-      <span class="clock_digit">:</span>
-      <span class="clock_digit">0</span>
-      <span class="clock_digit">0</span>
-    </div>
-    <div class="timeleft">
-      <p>Days</p>
-      <p>Hours</p>
-      <p>Minutes</p>
-      <p>Seconds</p>
-    </div>
-  </section>
-
-  <script src="./timerclock.js"></script>
-
-  <h2 id="about">ABOUT</h2>
-  <section class="about_page">
-    <div class="team_photo">
-      <img src="./Assets/Screenshot (27).png" alt="Team" height="400px" />
-    </div>
-    <div>
-      <p class="about_info">
-        Version Beta is the amalgamation of some of the nation's greatest
-        technological minds, with an ideal platform for technology enthusiasts
-        to demonstrate their talents and ingenuity. After successfully
-        organizing its digital variation for the last two years we are back
-        this year, grander than ever, to build on the legacy of our offline
-        editions. To bring you an array of diverse activities, we have
-        included synchronized delivery of workshops, and guest speakers of the
-        highest caliber from the world of technology and entrepreneurship. It
-        is accompanied by a 36-hour hackathon powered by MLH, the largest in
-        central India, allowing participants to test their intelligence, be
-        recognized and get rewarded while rubbing shoulders with the offline
-        NIT-B campus experience and real-time guidance from the MLH community.
-        In a stroke, Version Beta is the souls' satisfiers of tech aficionados
-        while fostering the next generation of developers, thinkers, and
-        entrepreneurs.
-      </p>
-    </div>
-  </section>
-
-  <h2 id="schedule_heading">SCHEDULE</h2>
-  <section class="schedule">
-    <div class="schedule_tabs one">
-      <a href="#" class="tab">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Registration
-      </a>
-      <p class="info">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum itaque pariatur accusantium consectetur veritatis unde tempora. Minus veritatis ut ad.
-      </p>
-      <i class="fa-regular fa-address-card"></i>
-    </div>
-
-    <div class="schedule_tabs two">
-      <a href="#" class="tab">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Ideation
-      </a>
-      <p class="info">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum itaque pariatur accusantium consectetur veritatis unde tempora. Minus veritatis ut ad.
-      </p>
-      <i class="fa-regular fa-lightbulb"></i>
-    </div>
-
-    <div class="schedule_tabs three">
-      <a href="#" class="tab">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Announcement
-      </a>
-      <p class="info">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum itaque pariatur accusantium consectetur veritatis unde tempora. Minus veritatis ut ad.
-      </p>
-      <i class="fa-regular fa-bullhorn"></i>
-    </div>
-
-    <div class="schedule_tabs four">
-      <a href="#" class="tab">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Team
-      </a>
-      <p class="info">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum itaque pariatur accusantium consectetur veritatis unde tempora. Minus veritatis ut ad.
-      </p>
-      <i class="fa-solid fa-people-group"></i>
-    </div>
-
-    <div class="schedule_tabs five">
-      <a href="#" class="tab">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Hackathon
-      </a>
-      <p class="info">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum itaque pariatur accusantium consectetur veritatis unde tempora. Minus veritatis ut ad.
-      </p>
-      <i class="fa-solid fa-microchip"></i>
-    </div>
-  </section>
-
-  <h1 id="prizes_heading">PRIZES</h1>
-
-  <div class="prizes">
-    <div class="second">
-      <img src="./Assets/2nd prize.png" class="secondprize" />
-      <a href="#" class="sec-prize">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        ₹amount(2nd)
-      </a>
-    </div>
-    <div class="first">
-      <img src="./Assets/1st prize.png" class="firstprize" />
-      <a href="#" class="first-prize">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        ₹amount(1st)
-      </a>
-    </div>
-    <div class="third">
-      <img src="./Assets/3rd prize.png" class="thirdprize" />
-      <a href="#" class="third-prize">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        ₹amount(3rd)
-      </a>
-    </div>
-  </div>
-
-
-  <h1 id="gallery_heading">GALLERY</h1>
-  <section class="gallery">
-
-  </section>
-
-
-  <h1 id="sponsor_heading">SPONSORS</h1>
-  <section class="sponsors">
-
-  </section>
-
-  <h1 class="title_faq">FAQs</h1>
-  <section class="faq_section">
-    
-   <div class="section-1">
-    <div class="faq">
-      <div class="question">
-        <h3 class="question_faq">Who are we?</h3>
+      <p class="clock_desc">Registration starts in..</p>
+      <div id="clock">
+        <span class="clock_digit">0</span>
+        <span class="clock_digit">0</span>
+        <span class="clock_digit">:</span>
+        <span class="clock_digit">0</span>
+        <span class="clock_digit">0</span>
+        <span class="clock_digit">:</span>
+        <span class="clock_digit">0</span>
+        <span class="clock_digit">0</span>
       </div>
-      <div class="answer">
-         <p class="answer_faq">ISTE SC MANIT is one of the oldest societies of MANIT. We've been awarded as the best students' chapter in MP - Chhattisgarh region three times in a row. So when it comes to organising technical events, we're always at the top of the food chain.</p>
+      <div class="timeleft">
+        <p>Days</p>
+        <p>Hours</p>
+        <p>Minutes</p>
+        <p>Seconds</p>
       </div>
-    </div>
-    
-    <div class="faq">
-      <div class="question">
-        <h3 class="question_faq">What are we looking in a team?</h3>
-      </div>
-      <div class="answer">
-         <p class="answer_faq">You don't need to be a coding genius to participate in the event. The only requirement is your willingness and passion to learn. There is a winner among us and it can be you. So buckle up coz we're gonna make you an offer you can't refuse..</p>
-      </div>
-    </div>
-   </div> 
-    
-   <div class="section-2">
-    <div class="faq">
-      <div class="question">
-        <h3 class="question_faq">What is version beta?</h3>
-      </div>
-      <div class="answer">
-         <p class="answer_faq">It's Central India's largest students' held Hackathon in which students from all over the country compete against each other for 36 hours non-stop and put their coding skills to test.</p>
-      </div>
-    </div>
-    
-    <div class="faq">
-      <div class="question">
-        <h3 class="question_faq">Will Hackathon be conducted online?</h3>
-      </div>
-      <div class="answer">
-         <p class="answer_faq">No, the hackathon comes as a combo package of rewards and on-campus experience of NIT Bhopal.</p>
-      </div>
-    </div>
-   </div> 
+    </section>
 
-    <div class="section-3">
-      <div class="faq">
-        <div class="question">
-          <h3 class="question_faq">Who should participate?</h3>
-        </div>
-        <div class="answer">
-           <p class="answer_faq">If you are a college student who is interested in solving real-life problems through the virtual world of your laptop screens, you're at the right place. The Hackathon is just for you.</p>
-        </div>
-      </div>
-      
-      <div class="faq">
-        <div class="question">
-          <h3 class="question_faq">What is the goal of Hackathon?</h3>
-        </div>
-        <div class="answer">
-           <p class="answer_faq">The main aim of Hackathon is to bring out the coding skills of students to practical use.</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="section-4">
-      <div class="faq">
-        <div class="question">
-          <h3 class="question_faq">Number of members in a team</h3>
-        </div>
-        <div class="answer">
-           <p class="answer_faq">The maximum no. of team members is 4. You can also participate in a team of 3 or 2 members. It's up to you. Choose your crewmates carefully to prevent being ejected.</p>
-        </div>
-      </div>
-      
-      <div class="faq">
-        <div class="question">
-          <h3 class="question_faq">What is selection procedure?</h3>
-        </div>
-        <div class="answer">
-           <p class="answer_faq">Upload your GitHub profiles and CV while registering through Devfolio and you're all done. All the best!</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="section-5">
-      <div class="faq">
-        <div class="question">
-          <h3 class="question_faq">Cost for participation in Hackathon?</h3>
-        </div>
-        <div class="answer">
-           <p class="answer_faq">If you don't count the internet cost and the electricity bill for your laptop, then it's zero. NIL. Nothing..</p>
-        </div>
-      </div>
-      
-      <div class="faq">
-        <div class="question">
-          <h3 class="question_faq">How to participate?</h3>
-        </div>
-        <div class="answer">
-           <p class="answer_faq">Visit our website to register for the Hackathon. You'll be provided all the details there.</p>
-        </div>
-      </div>
-    </div>
+    <script src="./timerclock.js"></script>
 
-    <div class="section-6">
-      <div class="faq">
-        <div class="question">
-          <h3 class="question_faq">What is selection procedure?</h3>
-        </div>
-        <div class="answer">
-          <p class="answer_faq">Upload your GitHub profiles and CV while registering through Devfolio and you're all done. All the best!</p>
-        </div>
+    <h2 id="about">ABOUT</h2>
+    <section class="about_page">
+      <div class="team_photo">
+        <img src="./Assets/Screenshot (27).png" alt="Team" height="400px" />
       </div>
-    </div>
-  </section>
-  <script src="./faq.js"></script>
-
-  <div class="footer_container">
-    <div class="top_footer">
-      <div class="left_footer">
-        <h1 class="footer_heading">ADDRESS</h1>
-        <br />
-        <h4 class="mact_address">
-          <a class="mact"
-            href="https://www.google.co.in/maps/place/Maulana+Azad+National+Institute+of+Technology,+Bhopal/@23.2186852,77.4053407,15z/data=!4m6!3m5!1s0x397c42dd7c3c50eb:0xc74245bb15638ab9!8m2!3d21.0686228!4d82.7525294!16zL20vMGJja18z?entry=ttu"
-            target="_blank">
-            MAULANA AZAD NATIONAL INSTITUTE OF TECHNOLOGY, BHOPAL
-          </a>
-        </h4>
-        <br />
-      </div>
-
-      <div class="middle_footer">
-        <h1 class="footer_heading">CONTACT</h1>
-        <br />
-        <h4 class="name1">Animesh Nayak</h4>
-        <br />
-        <p class="animesh">
-          <a href="tel:8504036415" class="number">+91-8504036415</a><br />
-        </p>
-        <h4 class="name2">Navyasree Konagalla</h4>
-        <br />
-        <p class="navyasree">
-          <a href="tel:9490165056" class="number">+91-9490165056</a><br />
+      <div>
+        <p class="about_info">
+          Version Beta is the amalgamation of some of the nation's greatest
+          technological minds, with an ideal platform for technology enthusiasts
+          to demonstrate their talents and ingenuity. After successfully
+          organizing its digital variation for the last two years we are back
+          this year, grander than ever, to build on the legacy of our offline
+          editions. To bring you an array of diverse activities, we have
+          included synchronized delivery of workshops, and guest speakers of the
+          highest caliber from the world of technology and entrepreneurship. It
+          is accompanied by a 36-hour hackathon powered by MLH, the largest in
+          central India, allowing participants to test their intelligence, be
+          recognized and get rewarded while rubbing shoulders with the offline
+          NIT-B campus experience and real-time guidance from the MLH community.
+          In a stroke, Version Beta is the souls' satisfiers of tech aficionados
+          while fostering the next generation of developers, thinkers, and
+          entrepreneurs.
         </p>
       </div>
+    </section>
 
-      <div class="right_footer">
-        <h1 class="footer_heading">EMAIL ADDRESS</h1>
-        <br />
-        <a href="mailto: istescmanit@gmail.com" class="emailID">istescmanit@gmail.com</a>
+    <h2 id="schedule_heading">SCHEDULE</h2>
+    <section class="schedule">
+      <div class="schedule_tabs one">
+        <a href="#" class="tab">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Registration
+        </a>
+        <p class="info">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum itaque
+          pariatur accusantium consectetur veritatis unde tempora. Minus
+          veritatis ut ad.
+        </p>
+        <div class="reg_line"></div>
+        <i class="fa-regular fa-address-card"></i>
+      </div>
+
+      <div class="schedule_tabs two">
+        <a href="#" class="tab">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Ideation
+        </a>
+        <p class="info">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum itaque
+          pariatur accusantium consectetur veritatis unde tempora. Minus
+          veritatis ut ad.
+        </p>
+        <div class="idea_line"></div>
+        <i class="fa-regular fa-lightbulb"></i>
+      </div>
+
+      <div class="schedule_tabs three">
+        <a href="#" class="tab">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Announcement
+        </a>
+        <p class="info">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum itaque
+          pariatur accusantium consectetur veritatis unde tempora. Minus
+          veritatis ut ad.
+        </p>
+        <div class="ann_line"></div>
+        <i class="fa-regular fa-bullhorn"></i>
+      </div>
+
+      <div class="schedule_tabs four">
+        <a href="#" class="tab">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Team
+        </a>
+        <p class="info">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum itaque
+          pariatur accusantium consectetur veritatis unde tempora. Minus
+          veritatis ut ad.
+        </p>
+        <div class="team_line"></div>
+        <i class="fa-solid fa-people-group"></i>
+      </div>
+
+      <div class="schedule_tabs five">
+        <a href="#" class="tab">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Hackathon
+        </a>
+        <p class="info">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum itaque
+          pariatur accusantium consectetur veritatis unde tempora. Minus
+          veritatis ut ad.
+        </p>
+        <div class="hack_line"></div>
+        <i class="fa-solid fa-microchip"></i>
+      </div>
+    </section>
+
+    <h1 id="prizes_heading">PRIZES</h1>
+
+    <div class="prizes">
+      <div class="second">
+        <img src="./Assets/2nd prize.png" class="secondprize" />
+        <a href="#" class="sec-prize">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          ₹amount(2nd)
+        </a>
+      </div>
+      <div class="first">
+        <img src="./Assets/1st prize.png" class="firstprize" />
+        <a href="#" class="first-prize">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          ₹amount(1st)
+        </a>
+      </div>
+      <div class="third">
+        <img src="./Assets/3rd prize.png" class="thirdprize" />
+        <a href="#" class="third-prize">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          ₹amount(3rd)
+        </a>
       </div>
     </div>
-    <hr color="#03e9f4" />
-    <div class="mid_footer">
-      <h1 class="footer_heading">SOCIAL LINKS</h1>
-      <div class="logos">
-        <div class="logo1">
-          <a class="footer_1st" href="https://www.instagram.com/istemanit/" target="_blank"><img
-              src="Assets/instagram.png" class="insta" /></a>
+
+    <h1 id="gallery_heading">GALLERY</h1>
+    <section class="gallery"></section>
+
+    <h1 id="sponsor_heading">SPONSORS</h1>
+    <section class="sponsors"></section>
+
+    <h1 class="title_faq">FAQs</h1>
+    <section class="faq_section">
+      <div class="section-1">
+        <div class="faq">
+          <div class="question">
+            <h3 class="question_faq">Who are we?</h3>
+          </div>
+          <div class="answer">
+            <p class="answer_faq">
+              ISTE SC MANIT is one of the oldest societies of MANIT. We've been
+              awarded as the best students' chapter in MP - Chhattisgarh region
+              three times in a row. So when it comes to organising technical
+              events, we're always at the top of the food chain.
+            </p>
+          </div>
         </div>
-        <div class="logo2">
-          <a class="footer_2nd" href="https://www.facebook.com/ISTESCMANIT" target="_blank"><img
-              src="Assets/facebook.png" class="facebook" /></a>
-        </div>
-        <div class="logo3">
-          <a class="footer_3rd" href="https://www.linkedin.com/company/iste-sc-manit/mycompany/" target="_blank"><img
-              src="Assets/linkedin.png" class="linkedin" /></a>
+
+        <div class="faq">
+          <div class="question">
+            <h3 class="question_faq">What are we looking in a team?</h3>
+          </div>
+          <div class="answer">
+            <p class="answer_faq">
+              You don't need to be a coding genius to participate in the event.
+              The only requirement is your willingness and passion to learn.
+              There is a winner among us and it can be you. So buckle up coz
+              we're gonna make you an offer you can't refuse..
+            </p>
+          </div>
         </div>
       </div>
+
+      <div class="section-2">
+        <div class="faq">
+          <div class="question">
+            <h3 class="question_faq">What is version beta?</h3>
+          </div>
+          <div class="answer">
+            <p class="answer_faq">
+              It's Central India's largest students' held Hackathon in which
+              students from all over the country compete against each other for
+              36 hours non-stop and put their coding skills to test.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">
+            <h3 class="question_faq">Will Hackathon be conducted online?</h3>
+          </div>
+          <div class="answer">
+            <p class="answer_faq">
+              No, the hackathon comes as a combo package of rewards and
+              on-campus experience of NIT Bhopal.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-3">
+        <div class="faq">
+          <div class="question">
+            <h3 class="question_faq">Who should participate?</h3>
+          </div>
+          <div class="answer">
+            <p class="answer_faq">
+              If you are a college student who is interested in solving
+              real-life problems through the virtual world of your laptop
+              screens, you're at the right place. The Hackathon is just for you.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">
+            <h3 class="question_faq">What is the goal of Hackathon?</h3>
+          </div>
+          <div class="answer">
+            <p class="answer_faq">
+              The main aim of Hackathon is to bring out the coding skills of
+              students to practical use.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-4">
+        <div class="faq">
+          <div class="question">
+            <h3 class="question_faq">Number of members in a team</h3>
+          </div>
+          <div class="answer">
+            <p class="answer_faq">
+              The maximum no. of team members is 4. You can also participate in
+              a team of 3 or 2 members. It's up to you. Choose your crewmates
+              carefully to prevent being ejected.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">
+            <h3 class="question_faq">What is selection procedure?</h3>
+          </div>
+          <div class="answer">
+            <p class="answer_faq">
+              Upload your GitHub profiles and CV while registering through
+              Devfolio and you're all done. All the best!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-5">
+        <div class="faq">
+          <div class="question">
+            <h3 class="question_faq">Cost for participation in Hackathon?</h3>
+          </div>
+          <div class="answer">
+            <p class="answer_faq">
+              If you don't count the internet cost and the electricity bill for
+              your laptop, then it's zero. NIL. Nothing..
+            </p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">
+            <h3 class="question_faq">How to participate?</h3>
+          </div>
+          <div class="answer">
+            <p class="answer_faq">
+              Visit our website to register for the Hackathon. You'll be
+              provided all the details there.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-6">
+        <div class="faq">
+          <div class="question">
+            <h3 class="question_faq">What is selection procedure?</h3>
+          </div>
+          <div class="answer">
+            <p class="answer_faq">
+              Upload your GitHub profiles and CV while registering through
+              Devfolio and you're all done. All the best!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./faq.js"></script>
+
+    <div class="footer_container">
+      <div class="top_footer">
+        <div class="left_footer">
+          <h1 class="footer_heading">ADDRESS</h1>
+          <br />
+          <h4 class="mact_address">
+            <a
+              class="mact"
+              href="https://www.google.co.in/maps/place/Maulana+Azad+National+Institute+of+Technology,+Bhopal/@23.2186852,77.4053407,15z/data=!4m6!3m5!1s0x397c42dd7c3c50eb:0xc74245bb15638ab9!8m2!3d21.0686228!4d82.7525294!16zL20vMGJja18z?entry=ttu"
+              target="_blank"
+            >
+              MAULANA AZAD NATIONAL INSTITUTE OF TECHNOLOGY, BHOPAL
+            </a>
+          </h4>
+          <br />
+        </div>
+
+        <div class="middle_footer">
+          <h1 class="footer_heading">CONTACT</h1>
+          <br />
+          <h4 class="name1">Animesh Nayak</h4>
+          <br />
+          <p class="animesh">
+            <a href="tel:8504036415" class="number">+91-8504036415</a><br />
+          </p>
+          <h4 class="name2">Navyasree Konagalla</h4>
+          <br />
+          <p class="navyasree">
+            <a href="tel:9490165056" class="number">+91-9490165056</a><br />
+          </p>
+        </div>
+
+        <div class="right_footer">
+          <h1 class="footer_heading">EMAIL ADDRESS</h1>
+          <br />
+          <a href="mailto: istescmanit@gmail.com" class="emailID"
+            >istescmanit@gmail.com</a
+          >
+        </div>
+      </div>
+      <hr color="#03e9f4" />
+      <div class="mid_footer">
+        <h1 class="footer_heading">SOCIAL LINKS</h1>
+        <div class="logos">
+          <div class="logo1">
+            <a
+              class="footer_1st"
+              href="https://www.instagram.com/istemanit/"
+              target="_blank"
+              ><img src="Assets/instagram.png" class="insta"
+            /></a>
+          </div>
+          <div class="logo2">
+            <a
+              class="footer_2nd"
+              href="https://www.facebook.com/ISTESCMANIT"
+              target="_blank"
+              ><img src="Assets/facebook.png" class="facebook"
+            /></a>
+          </div>
+          <div class="logo3">
+            <a
+              class="footer_3rd"
+              href="https://www.linkedin.com/company/iste-sc-manit/mycompany/"
+              target="_blank"
+              ><img src="Assets/linkedin.png" class="linkedin"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <hr color="#03e9f4" />
+      <div class="bottom_footer">
+        <p class="copyright">
+          Copyright © 2023 by
+          <a class="site" href="https://www.istemanit.in/" target="_blank"
+            >ISTE-SC MANIT</a
+          >. All rights reserved.
+        </p>
+      </div>
     </div>
-    <hr color="#03e9f4" />
-    <div class="bottom_footer">
-      <p class="copyright">
-        Copyright © 2023 by
-        <a class="site" href="https://www.istemanit.in/" target="_blank">ISTE-SC MANIT</a>. All rights reserved.
-      </p>
-    </div>
-  </div>
 
-  <script>
-document.addEventListener("DOMContentLoaded", function () {
-  
-  const timeoutDuration = 4000;
-
-  setTimeout(function () {
-      const preloader = document.getElementById("preloader");
-      if (preloader) {
-          preloader.style.display = "none";
-      }
-  }, timeoutDuration);
-});
-
-  </script>
-  <script>
-    window.addEventListener("scroll", toggleGoToTopButton);
-
-function toggleGoToTopButton() {
-  const goToTopButton = document.getElementById("go-top-btn");
-  if (window.scrollY >= 300) {
-      goToTopButton.classList.remove("hidden");
-  } else {
-      goToTopButton.classList.add("hidden");
-  }
-}
-
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
-  </script>
-
-</body>
-
+    <script src="./main.js"></script>
+  </body>
 </html>
