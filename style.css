@@ -37,7 +37,6 @@
   width: 100px;
   height: 100px;
   background: transparent;
-  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
@@ -45,10 +44,10 @@
 }
 
 .go-top-btn img {
-  width: 55px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   filter: invert(75%) sepia(56%) saturate(4454%) hue-rotate(1deg) brightness(106%) contrast(104%);
-  z-index: 1000;
+  /* z-index: 1000; */
   transition: ease 0.25s;
 }
 
@@ -76,7 +75,7 @@ body {
   scroll-behavior: smooth;
 }
 
-#myVideo {
+#bgvideo {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -87,7 +86,7 @@ body {
   z-index: -1;
   filter: brightness(1);
   filter: opacity(-1);
-  filter: grayscale(70%);
+  filter: grayscale(75%);
 }
 
 header {
@@ -198,7 +197,7 @@ header div ul li a {
   position: absolute;
   right: 240px;
   top: 280px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #clock {
@@ -230,12 +229,10 @@ header div ul li a {
 
 #about {
   position: relative;
-  top: 630px;
-  right: 550px;
+  top: 410px;
   display: flex;
   justify-content: center;
   font-size: 40px;
-  transform: rotate(270deg);
 }
 
 .about_page {
@@ -244,14 +241,12 @@ header div ul li a {
   justify-content: center;
   position: relative;
   top: 350px;
-  left: 80px;
-  top: 480px;
+  top: 420px;
 }
 
 .about_info {
   font-family: 'Poppins', sans-serif;
   font-style: italic;
-  color: whitesmoke;
   color: rgb(236, 207, 212);
   text-align: justify;
 }
@@ -270,15 +265,15 @@ header div ul li a {
 
 #schedule_heading {
   position: relative;
-  right: 550px;
-  top: 450px;
+  top: 480px;
   font-size: 50px;
-  transform: rotate(270deg);
+  display: flex;
+  justify-content: center;
 }
 
 .schedule {
   position: relative;
-  top: 400px;
+  top: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -297,6 +292,36 @@ header div ul li a {
   border-radius: 15px;
 }
 
+.reg_line, .ann_line, .hack_line{
+  width: 120px;
+  position: relative;
+  left: 680px;
+  bottom: 95px;
+}
+
+.idea_line, .team_line{
+  width: 130px;
+  position: relative;
+  right: 165px;
+  bottom: 95px;
+}
+
+.one:hover .reg_line{
+  border: 2px solid #03e9f4;
+}
+.two:hover .idea_line{
+  border: 2px solid #03e9f4;
+}
+.three:hover .ann_line{
+  border: 2px solid #03e9f4;
+}
+.four:hover .team_line{
+  border: 2px solid #03e9f4;
+}
+.five:hover .hack_line{
+  border: 2px solid #03e9f4;
+}
+
 .one, .three, .five{
   position: relative;
   right: 50px;
@@ -309,14 +334,14 @@ header div ul li a {
 .one i, .three i, .five i{
   position: relative;
   left: 800px;
-  bottom: 100px;
+  bottom: 112px;
   font-size: 35px;
 }
 
 .two i, .four i{
   position: relative;
-  right: 180px;
-  bottom: 100px;
+  right: 200px;
+  bottom: 112px;
   font-size: 35px;
 }
 
@@ -446,16 +471,16 @@ header div ul li a {
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 520px;
+  top: 500px;
   margin-top: 70px;
 }
 
 #prizes_heading {
   text-align: center;
   color: whitesmoke;
-  font-size: 40px;
+  font-size: 50px;
   position: relative;
-  top: 580px;
+  top: 570px;
 }
 
 .second,
@@ -524,7 +549,7 @@ header div ul li a {
 
 .third:hover .third-prize{
   background: rgb(189, 98, 98);
-  color: lightcyan;
+  color: rgb(251, 255, 224);
   box-shadow: 0 0 5px rgb(189, 98, 98), 0 0 25px rgb(189, 98, 98), 0 0 50px rgb(189, 98, 98), 0 0 200px rgb(189, 98, 98);
 }
 
@@ -729,29 +754,37 @@ header div ul li a {
 }
 
 
+#gallery_heading{
+  font-size: 50px;
+  color: whitesmoke;
+  position: relative;
+  top: 120px;
+  right: 550px;
+  transform: rotate(270deg);
+}
+
+
+#sponsor_heading{
+  font-size: 50px;
+  color: whitesmoke;
+  position: relative;
+  top: 600px;
+  right: 550px;
+  transform: rotate(270deg);
+}
 
 .faq_body {
   font-family: 'Poppins', sans-serif;
   color: white;
 }
 
-.faq_section {
-  min-height: 100vh;
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 50px;
-  position: relative;
-  top: 500px;
-}
-
-#title_faq {
-  font-size: 40px;
+.title_faq {
+  font-size: 50px;
   color: whitesmoke;
-  margin: 2rem 0rem;
-  align-self: center;
+  position: relative;
+  right: 550px;
+  top: 80px;
+  transform: rotate(270deg);
 }
 /*
 
@@ -807,6 +840,7 @@ header div ul li a {
   margin-bottom: 50px;
   position: relative;
   top: 500px;
+  left: 90px;
 }
 
 .question_faq{
