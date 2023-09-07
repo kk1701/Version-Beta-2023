@@ -22,6 +22,7 @@
         /* background-color: black; */
         
     }
+
     .header{
         position: fixed;
         z-index: 2;
@@ -40,6 +41,7 @@
         position: relative;
         right: 110px;
     }
+
     .link_wrapper{
         position: relative;
         right: 125px;
@@ -50,6 +52,7 @@
         height: 50px;
         font-size: 20px;
     }
+
     .clock_desc{
         position: absolute;
         top: 300px;
@@ -64,7 +67,8 @@
         right: 130px;
         font-size: 14px;
     }
-    #about{
+
+    #about, #schedule_heading, #prizes_heading, #gallery_heading, #sponsor_heading, #gallery_heading, #title_faq{
         font-size: 35px;
     }
     .team_photo img{
@@ -75,6 +79,7 @@
         font-size: 17px;
         width: 350px;
     }
+
     #schedule_heading{
         font-size: 35px;
     }
@@ -86,4 +91,17 @@
         top: 70px;
         left: 720px;
     }
+    .two i, .four i{
+        position: relative;
+        right: 150px;
+    }
+
+    .second, .third{
+        height: 280px;
+        width: 150px;
+    }
+    .sec-prize{
+        height: 80px;
+    }
+    
 }
