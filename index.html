@@ -30,29 +30,27 @@
     </button>
 
     <video autoplay muted loop id="bgvideo">
-      <source src="./Assets/140578 (Original).mp4" type="video/mp4" />
+      <source src="./Assets/new_bac_comp.mp4" type="video/mp4" />
     </video>
 
-    <header>
-      <div class="logo">
-        <img src="./Assets/ISTE logo.svg" alt="ISTE LOGO" />
-      </div>
-      <div>
-        <ul>
-          <li><a href="#home_page" class="header_content">HOME</a></li>
-          <li><a href="#about" class="header_content">ABOUT</a></li>
-          <li>
-            <a href="#schedule_heading" class="header_content">SCHEDULE</a>
-          </li>
-          <li><a href="#prizes_heading" class="header_content">PRIZES</a></li>
-          <li><a href="#gallery_heading" class="header_content">GALLERY</a></li>
-          <li>
-            <a href="#sponsor_heading" class="header_content">SPONSORS</a>
-          </li>
-          <li><a href="#title_faq" class="header_content">FAQS</a></li>
-        </ul>
-      </div>
-    </header>
+  <header>
+    <div class="logo">
+      <img src="./Assets/ISTE logo.svg" alt="ISTE LOGO" />
+    </div>
+    <div>
+      <ul>
+        <li><button class="header_content" onclick="scrollToTop()">HOME</button></li>
+        <li><button class="header_content" onclick="scrollToAbout()">ABOUT</button></li>
+        <li>
+          <button class="header_content" onclick="scrollToSchedule()">SCHEDULE</button>
+        </li>
+        <li><button class="header_content" onclick="scrollToPrizes()">PRIZES</button></li>
+        <li><button class="header_content" onclick="scrollToGallery()">GALLERY</button></li>
+        <li><button class="header_content" onclick="scrollToSponsor()">SPONSORS</button></li>
+        <li><button class="header_content" onclick="scrollToFaq()">FAQS</button></li>
+      </ul>
+    </div>
+  </header>
 
     <section id="home_page">
       <div class="left">
@@ -68,9 +66,9 @@
           <span class="version-beta" id="beta">Beta</span>
           <span class="version-beta" id="number">6.0</span>
         </p>
-        <div class="wrapper">
+        <div class="wrapper_register">
           <div class="link_wrapper">
-            <a href="#" class="button-register">Register Now</a>
+            <a href="#" class="register_here">Register Now</a>
             <div class="icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -257,7 +255,41 @@
     </div>
 
     <h1 id="gallery_heading">GALLERY</h1>
-    <section class="gallery"></section>
+    <div class="wrapper">
+        
+      <div class="gallery">
+          <div class="gallery__item gallery__item--1">
+                  <img src="Assets/img5.jpeg" class="gallery__image" />
+          </div>
+  
+          <div class="gallery__item gallery__item--2">
+            <img src="Assets/img2.jpeg" class="gallery__image" />
+          </div>
+          
+          <div class="gallery__item gallery__item--3">
+            <img src="Assets/img3.jpeg" class="gallery__image" />
+          </div>
+  
+          <div class="gallery__item gallery__item--4">
+            <img src="Assets/img4.jpeg" class="gallery__image" />
+          </div>
+  
+          <div class="gallery__item gallery__item--5">
+            <img src="Assets/img1.jpg" class="gallery__image" />
+          </div>
+  
+          <div class="gallery__item gallery__item--6">
+            <img src="Assets/img7.jpeg" class="gallery__image" />
+          </div>
+  
+          <div class="gallery__item gallery__item--7">
+            <img src="Assets/img8.jpeg" class="gallery__image" />
+          </div>
+  
+          <div class="gallery__item gallery__item--8">
+            <img src="Assets/img6.jpeg" class="gallery__image" />
+          </div>
+      </div>
 
     <h1 id="sponsor_heading">SPONSORS</h1>
     <section class="sponsors"></section>
@@ -417,87 +449,154 @@
     </section>
     <script src="./faq.js"></script>
 
-    <div class="footer_container">
-      <div class="top_footer">
-        <div class="left_footer">
-          <h1 class="footer_heading">ADDRESS</h1>
-          <br />
-          <h4 class="mact_address">
-            <a
-              class="mact"
-              href="https://www.google.co.in/maps/place/Maulana+Azad+National+Institute+of+Technology,+Bhopal/@23.2186852,77.4053407,15z/data=!4m6!3m5!1s0x397c42dd7c3c50eb:0xc74245bb15638ab9!8m2!3d21.0686228!4d82.7525294!16zL20vMGJja18z?entry=ttu"
-              target="_blank"
-            >
-              MAULANA AZAD NATIONAL INSTITUTE OF TECHNOLOGY, BHOPAL
-            </a>
-          </h4>
-          <br />
-        </div>
-
-        <div class="middle_footer">
-          <h1 class="footer_heading">CONTACT</h1>
-          <br />
-          <h4 class="name1">Animesh Nayak</h4>
-          <br />
-          <p class="animesh">
-            <a href="tel:8504036415" class="number">+91-8504036415</a><br />
-          </p>
-          <h4 class="name2">Navyasree Konagalla</h4>
-          <br />
-          <p class="navyasree">
-            <a href="tel:9490165056" class="number">+91-9490165056</a><br />
-          </p>
-        </div>
-
-        <div class="right_footer">
-          <h1 class="footer_heading">EMAIL ADDRESS</h1>
-          <br />
-          <a href="mailto: istescmanit@gmail.com" class="emailID"
-            >istescmanit@gmail.com</a
-          >
-        </div>
+  <div class="footer_container">
+    <div class="top_footer">
+      <div class="left_footer">
+        <h1 class="footer_heading">Address</h1>
+        <br />
+        <h4 class="mact_address">
+          <a class="mact"
+            href="https://www.google.co.in/maps/place/Maulana+Azad+National+Institute+of+Technology,+Bhopal/@23.2186852,77.4053407,15z/data=!4m6!3m5!1s0x397c42dd7c3c50eb:0xc74245bb15638ab9!8m2!3d21.0686228!4d82.7525294!16zL20vMGJja18z?entry=ttu"
+            target="_blank">
+            Maulana Azad National Institute Of Technology, Bhopal
+          </a>
+        </h4>
+        <br />
       </div>
-      <hr color="#03e9f4" />
-      <div class="mid_footer">
-        <h1 class="footer_heading">SOCIAL LINKS</h1>
-        <div class="logos">
-          <div class="logo1">
-            <a
-              class="footer_1st"
-              href="https://www.instagram.com/istemanit/"
-              target="_blank"
-              ><img src="Assets/instagram.png" class="insta"
-            /></a>
-          </div>
-          <div class="logo2">
-            <a
-              class="footer_2nd"
-              href="https://www.facebook.com/ISTESCMANIT"
-              target="_blank"
-              ><img src="Assets/facebook.png" class="facebook"
-            /></a>
-          </div>
-          <div class="logo3">
-            <a
-              class="footer_3rd"
-              href="https://www.linkedin.com/company/iste-sc-manit/mycompany/"
-              target="_blank"
-              ><img src="Assets/linkedin.png" class="linkedin"
-            /></a>
-          </div>
-        </div>
-      </div>
-      <hr color="#03e9f4" />
-      <div class="bottom_footer">
-        <p class="copyright">
-          Copyright © 2023 by
-          <a class="site" href="https://www.istemanit.in/" target="_blank"
-            >ISTE-SC MANIT</a
-          >. All rights reserved.
+
+      <div class="middle_footer">
+        <h1 class="footer_heading">Contact</h1>
+        <br />
+        <h4 class="name1">Animesh Nayak</h4>
+        <br />
+        <p class="animesh">
+          <a href="tel:8504036415" class="number">+91-8504036415</a><br />
+        </p>
+        <h4 class="name2">Navyasree Konagalla</h4>
+        <br />
+        <p class="navyasree">
+          <a href="tel:9490165056" class="number">+91-9490165056</a><br />
         </p>
       </div>
-    </div>
 
-    <script src="./main.js"></script>
-  </body>
+      <div class="right_footer">
+        <h1 class="footer_heading">Email Address</h1>
+        <br />
+        <a href="mailto: istescmanit@gmail.com" class="emailID">istescmanit@gmail.com</a>
+      </div>
+    </div>
+    <hr color="#03e9f4" />
+    <div class="mid_footer">
+      <h1 class="footer_heading_social">SOCIAL LINKS</h1>
+      <div class="logos">
+        <div class="logo1">
+          <a class="footer_1st" href="https://www.instagram.com/istemanit/" target="_blank"><img
+              src="Assets/instagram.png" class="insta" /></a>
+        </div>
+        <div class="logo2">
+          <a class="footer_2nd" href="https://www.facebook.com/ISTESCMANIT" target="_blank"><img
+              src="Assets/facebook.png" class="facebook" /></a>
+        </div>
+        <div class="logo3">
+          <a class="footer_3rd" href="https://www.linkedin.com/company/iste-sc-manit/mycompany/" target="_blank"><img
+              src="Assets/linkedin.png" class="linkedin" /></a>
+        </div>
+      </div>
+    </div>
+    <hr color="#03e9f4" />
+    <div class="bottom_footer">
+      <p class="copyright">
+        Copyright © 2023 by
+        <a class="site" href="https://www.istemanit.in/" target="_blank">ISTE-SC MANIT</a>. All rights reserved.
+      </p>
+    </div>
+  </div>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  
+  const timeoutDuration = 1000;
+
+  setTimeout(function () {
+      const preloader = document.getElementById("preloader");
+      if (preloader) {
+          preloader.style.display = "none";
+      }
+  }, timeoutDuration);
+});
+
+  </script>
+  <script>
+    window.addEventListener("scroll", toggleGoToTopButton);
+
+function toggleGoToTopButton() {
+  const goToTopButton = document.getElementById("go-top-btn");
+  if (window.scrollY >= 300) {
+      goToTopButton.classList.remove("hidden");
+  } else {
+      goToTopButton.classList.add("hidden");
+  }
+}
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+  </script>
+  
+  <script>
+    // Get all FAQ questions and answers
+    const faqItems = document.querySelectorAll('.faq');
+
+    // Add click event listeners to each question
+    faqItems.forEach((item) => {
+        const question = item.querySelector('.question_faq');
+        const answer = item.querySelector('.answer_faq');
+
+        question.addEventListener('click', () => {
+            // Toggle the visibility of the answer
+            if (answer.style.display === 'none') {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+
+            // Hide all other answers
+            faqItems.forEach((otherItem) => {
+                if (otherItem !== item) {
+                    const otherAnswer = otherItem.querySelector('.answer_faq');
+                    otherAnswer.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+    
+<script>
+  function scrollToAbout(){
+    window.scrollTo({ top: 630, behavior: "smooth" });
+  }
+
+  function scrollToSchedule(){
+    window.scrollTo({ top: 1370, behavior: "smooth" });
+  }
+
+  function scrollToPrizes(){
+    window.scrollTo({ top: 2790, behavior: "smooth" });
+  }
+
+  function scrollToFaq(){
+    window.scrollTo({ top: 3430, behavior: "smooth" });
+  }
+
+  function scrollToGallery(){
+    window.scrollTo({ top: 3430, behavior: "smooth" });
+  }
+
+  function scrollToSponsor(){
+    window.scrollTo({ top: 5150, behavior: "smooth" });
+  }
+</script>
+  
+</body>
+
 </html>
