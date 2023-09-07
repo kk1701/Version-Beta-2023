@@ -75,7 +75,7 @@ body {
   scroll-behavior: smooth;
 }
 
-#myVideo {
+#bgvideo {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -86,7 +86,7 @@ body {
   z-index: -1;
   filter: brightness(1);
   filter: opacity(-1);
-  filter: grayscale(70%);
+  filter: grayscale(75%);
 }
 
 header {
@@ -296,6 +296,36 @@ header div ul li button {
   border-radius: 15px;
 }
 
+.reg_line, .ann_line, .hack_line{
+  width: 120px;
+  position: relative;
+  left: 680px;
+  bottom: 95px;
+}
+
+.idea_line, .team_line{
+  width: 130px;
+  position: relative;
+  right: 165px;
+  bottom: 95px;
+}
+
+.one:hover .reg_line{
+  border: 2px solid #03e9f4;
+}
+.two:hover .idea_line{
+  border: 2px solid #03e9f4;
+}
+.three:hover .ann_line{
+  border: 2px solid #03e9f4;
+}
+.four:hover .team_line{
+  border: 2px solid #03e9f4;
+}
+.five:hover .hack_line{
+  border: 2px solid #03e9f4;
+}
+
 .one, .three, .five{
   position: relative;
   right: 50px;
@@ -308,14 +338,14 @@ header div ul li button {
 .one i, .three i, .five i{
   position: relative;
   left: 800px;
-  bottom: 100px;
+  bottom: 112px;
   font-size: 35px;
 }
 
 .two i, .four i{
   position: relative;
-  right: 180px;
-  bottom: 100px;
+  right: 200px;
+  bottom: 112px;
   font-size: 35px;
 }
 
@@ -524,7 +554,7 @@ header div ul li button {
 
 .third:hover .third-prize{
   background: rgb(189, 98, 98);
-  color: lightcyan;
+  color: rgb(251, 255, 224);
   box-shadow: 0 0 5px rgb(189, 98, 98), 0 0 25px rgb(189, 98, 98), 0 0 50px rgb(189, 98, 98), 0 0 200px rgb(189, 98, 98);
 }
 
