@@ -958,6 +958,7 @@ header div ul li button {
 
 .footer_container {
   display: flex;
+  flex: 1;
   background-color: #05070b;
   flex-direction: column;
   justify-content: center;
