@@ -1324,7 +1324,7 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 350px));
     column-gap: 40px;
-    row-gap: 40px;
+    row-gap: 60px;
     overflow: hidden;
     padding-left: 7rem;
     top: 110px;
@@ -1341,11 +1341,13 @@ body{
   .sponsors--i img {
     width: 65%;
     transition: all 0.5s;
-    height: 200px;
+    height: 180px;
     cursor: pointer;
     object-fit: contain;
     object-position: center;
 }
+
+
 
 .sponsors--i img:hover{
   transform: scale(1.1);
