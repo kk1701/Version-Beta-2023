@@ -233,10 +233,11 @@ header div ul li button {
   text-align: center;
   display: flex;
   justify-content: center;
-  font-size: 50px;
+  font-size: 70px;
+  color: #03e9f4;
+  letter-spacing: 3px;
   position: relative;
   top: 450px;
-  color: #03e9f4;
 }
 
 .about_page {
@@ -270,8 +271,9 @@ header div ul li button {
   position: relative;
   text-align: center;
   top: 550px;
-  font-size: 50px;
+  font-size: 70px;
   color: #03e9f4;
+  letter-spacing: 3px;
 }
 
 .schedule {
@@ -480,8 +482,9 @@ header div ul li button {
 
 #prizes_heading {
   text-align: center;
+  font-size: 70px;
   color: #03e9f4;
-  font-size: 50px;
+  letter-spacing: 3px;
   position: relative;
   top: 710px;
   text-align: center;
@@ -759,8 +762,9 @@ header div ul li button {
 
 
 #gallery_heading{
-  font-size: 50px;
+  font-size: 70px;
   color: #03e9f4;
+  letter-spacing: 3px;
   position: relative;
   top: 750px;
   text-align: center;
@@ -768,8 +772,9 @@ header div ul li button {
 
 
 #sponsor_heading{
-  font-size: 50px;
+  font-size: 70px;
   color: #03e9f4;
+  letter-spacing: 3px;
   position: relative;
   top: 140px;
   text-align: center;
@@ -781,11 +786,12 @@ header div ul li button {
 }
 
 .title_faq {
-  font-size: 50px;
+  font-size: 70px;
   color: #03e9f4;
+  letter-spacing: 3px;
   position: relative;
   text-align: center;
-  top: 790px;
+  top: 200px;
 }
 /*
 
@@ -841,8 +847,7 @@ header div ul li button {
   align-items: center;
   margin-bottom: 50px;
   position: relative;
-  top: 840px;
-  left: 50px;
+  top: 250px;
 }
 
 .question_faq{
@@ -1010,7 +1015,7 @@ header div ul li button {
   bottom: 0;
   left: 0;
   right: 0;
-  top: 620px;
+  top: 400px;
 }
 
 .mact,
@@ -1308,6 +1313,44 @@ body{
 }
 
 
+/* SPONSORS */
+
+  .sponsors {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 350px));
+    column-gap: 40px;
+    row-gap: 40px;
+    overflow: hidden;
+    padding-left: 7rem;
+    top: 110px;
+    left: -3rem;
+  }
+
+  .sponsors--i {
+    display: contents;
+    overflow: hidden;
+    height: auto;
+    text-decoration: none;
+  }
+
+  .sponsors--i img {
+    width: 65%;
+    transition: all 0.5s;
+    height: 200px;
+    cursor: pointer;
+    object-fit: contain;
+    object-position: center;
+}
+
+.sponsors--i img:hover{
+  transform: scale(1.1);
+}
+
 /* GALLERY */
 .wrapper {
   max-width: 75rem;
@@ -1455,4 +1498,3 @@ body{
       font-size: 1rem;
   }
 }
-
