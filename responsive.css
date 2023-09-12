@@ -34,7 +34,7 @@
     }
     .versionbeta_logo img{
         height: 150px;
-        width: 320px;
+        width: 380px;
     }
     .version-beta{
         font-size: 18px;
@@ -54,20 +54,15 @@
         position: relative;
         left: 10px;
     }
-
     .clock_desc{
         position: absolute;
         top: 300px;
-        right: 200px;
+        right: 150px;
     }
-    #clock{
-        font-size: 30px;
-    }
-    .timeleft{
+    .timer{
         position: absolute;
-        right: 120px;
-        bottom: 250px;
-        font-size: 14px;
+        top: 350px;
+        left: 650px;
     }
 
     #about, #schedule_heading, #prizes_heading, #gallery_heading, #sponsor_heading, #gallery_heading, #title_faq{
@@ -143,7 +138,12 @@
     }
     .left{
         position: relative;
-        right: 100px;
+        right: 120px;
+    }
+    .timer{
+        position: absolute;
+        left: 520px;
+        top: 350px;
     }
     .about_page{
         display: flex;
@@ -156,6 +156,32 @@
     .team_photo img{
         height: 400px;
         width: 450px;
+    }
+
+    .schedule_tabs{
+        width: 450px;
+    }
+
+    .second img, .third img{
+        height: 280px;
+        width: 220px;
+    }
+    .first img{
+        height: 350px;
+        width: 250px;
+    }
+
+    .wrapper{
+        width: 720px;
+    }
+    .gallery__image{
+        filter: opacity(100%) brightness(100%);
+    }
+
+    .faq_section div{
+        position: relative;
+        right: 0px;
+        width: 600px;
     }
 }
 

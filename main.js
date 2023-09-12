@@ -22,6 +22,7 @@ function toggleGoToTopButton() {
   }
 }
 
+// smooth scroll
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
@@ -49,13 +50,13 @@ function scrollToSponsor() {
   window.scrollTo({ top: 5400, behavior: "smooth" });
 }
 
-// Get all FAQ questions and answers
+// faqs
 const faqItems = document.querySelectorAll('.faq');
 
 
 // Add click event listeners to each question
 faqItems.forEach((item) => {
-  const question = item.querySelector('.question_faq');
+  const question = item.querySelector('.question');
   const answer = item.querySelector('.answer_faq');
   const faqArrows = item.querySelector('.question_arrow');
 
@@ -76,38 +77,4 @@ faqItems.forEach((item) => {
     });
   });
 });
-
-
-window.addEventListener("scroll", toggleGoToTopButton);
-
-function toggleGoToTopButton() {
-  const goToTopButton = document.getElementById("go-top-btn");
-  if (window.scrollY >= 300) {
-    goToTopButton.classList.remove("hidden");
-  } else {
-    goToTopButton.classList.add("hidden");
-  }
-}
-
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-
-
-  // const timeoutDuration = 1000;
-  const timeoutDuration = 8000;
-
-  setTimeout(function () {
-    const preloader = document.getElementById("preloader");
-    if (preloader) {
-      preloader.style.display = "none";
-    }
-  }, timeoutDuration);
-});
-
-
-
-
 

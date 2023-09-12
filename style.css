@@ -261,7 +261,7 @@ header div ul li button {
   text-align: center;
   display: flex;
   justify-content: center;
-  font-size: 70px;
+  font-size: 45px;
   color: #03e9f4;
   letter-spacing: 3px;
   position: relative;
@@ -298,8 +298,8 @@ header div ul li button {
 #schedule_heading {
   position: relative;
   text-align: center;
-  top: 550px;
-  font-size: 70px;
+  top: 580px;
+  font-size: 45px;
   color: #03e9f4;
   letter-spacing: 3px;
 }
@@ -524,7 +524,7 @@ header div ul li button {
 
 #prizes_heading {
   text-align: center;
-  font-size: 70px;
+  font-size: 45px;
   color: #03e9f4;
   letter-spacing: 3px;
   position: relative;
@@ -804,7 +804,7 @@ header div ul li button {
 
 
 #gallery_heading{
-  font-size: 50px;
+  font-size: 45px;
   color: #03e9f4;
   letter-spacing: 3px;
   position: relative;
@@ -814,7 +814,7 @@ header div ul li button {
 
 
 #sponsor_heading{
-  font-size: 50px;
+  font-size: 45px;
   color: #03e9f4;
   letter-spacing: 3px;
   position: relative;
@@ -822,64 +822,57 @@ header div ul li button {
   text-align: center;
 }
 
+.sponsors {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 350px));
+  column-gap: 40px;
+  row-gap: 60px;
+  overflow: hidden;
+  padding-left: 7rem;
+  top: 110px;
+  left: -3rem;
+}
+
+.sponsors--i {
+  display: contents;
+  overflow: hidden;
+  height: auto;
+  text-decoration: none;
+}
+
+.sponsors--i img {
+  width: 65%;
+  transition: all 0.5s;
+  height: 180px;
+  cursor: pointer;
+  object-fit: contain;
+  object-position: center;
+}
+
+.sponsors--i img:hover{
+transform: scale(1.1);
+}
+
+
+/* FAQs */
 .faq_body {
   font-family: 'Poppins', sans-serif;
   color: white;
 }
 
-
 #title_faq {
-  font-size: 50px;
+  font-size: 45px;
   color: #03e9f4;
   letter-spacing: 3px;
   position: relative;
   text-align: center;
   top: 200px;
 }
-
-/*
-
-.faq {
-  max-width: 700px;
-  min-width: 700px;
-  padding-bottom: 8px; 
-  cursor: pointer;
-}
-
-.question_faq {
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 1.5s ease;
-}
-
-
-.faq.active .answer {
-  max-height: 300px;
-  animation: fade 1s ease-in-out;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-} */
 
 .faq_section {
   min-height: 100vh;
@@ -894,9 +887,15 @@ header div ul li button {
   top: 250px;
 }
 
-.question_faq {
+.question_faq{
   font-size: 21px;
   font-weight: 400;
+  transition: ease-in 0.2s;
+}
+
+.faq:hover{
+  color: #03e9f4;
+
 }
 
 .answer_faq {
@@ -908,57 +907,66 @@ header div ul li button {
   display: none;
 }
 
-.faq_section {
+
+.faq_section{
   min-height: 100vh;
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-top: 50px; */
+  margin-bottom: 50px;
+
 }
 
-.faq {
-  max-width: 700px;
-  margin-top: 0.15rem;
-  padding-bottom: 1 rem;
+
+.faq{
+  width: 700px;
+  min-width: 700px;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #03e9f4;
   cursor: pointer;
 }
 
-.answer {
-  /* margin-top: 10px; */
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 1.4s ease;
-  outline: none;
+.question_faq{
+  font-size: 20px;
+  font-weight: 400;
 }
 
-.question {
+.question{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.faq.active .answer {
-  max-height: 200px;
+.answer{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+}
+
+
+.faq.active .answer{
+  max-height: 300px;
   animation: fade 1s ease-in-out;
 }
 
-.faq.active .question_arrow {
+
+.faq.active .question_arrow{
   transform: rotate(180deg);
 }
 
-.question_arrow {
+.question_arrow{
   transition: transform 0.5s ease-in;
 }
 
-@keyframes fade {
-  from {
+@keyframes fade{
+  from{
     opacity: 0;
     transform: translateY(-10px);
   }
-
-  to {
+  to{
     opacity: 1;
     transform: translateY(0px);
   }
