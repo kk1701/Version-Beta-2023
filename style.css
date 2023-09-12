@@ -1,6 +1,6 @@
 /* LOADER */
 
-#preloader{
+#preloader {
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -56,9 +56,10 @@
   transform: scale(1.1);
 }
 
-#go-top-btn.hidden{
-   display: hidden;
+#go-top-btn.hidden {
+  display: hidden;
 }
+
 /* BODY */
 
 html {
@@ -199,7 +200,7 @@ header div ul li button {
   border-radius: 10px;
 } */
 
-.clock_desc{
+.clock_desc {
   position: absolute;
   right: 210px;
   top: 280px;
@@ -212,7 +213,7 @@ header div ul li button {
   top: 360px; */
   font-size: 18px;
   background-color: var(--primary);
-  background-image: linear-gradient(-45degree, hsla(var(--hue), 10%, 10%, 0hsla(var(--hue), 10%, 10%, 0.2)),);
+  background-image: linear-gradient(-45degree, hsla(var(--hue), 10%, 10%, 0hsla(var(--hue), 10%, 10%, 0.2)), );
   border-radius: 8px;
   box-shadow: 0 0 0 0.1rem hsla(var(--hue), 10%, 10%, 0.2) inset;
   color: hsl(var(--hue), 10%, 100%);
@@ -234,7 +235,17 @@ header div ul li button {
   left: 950px;
 }
 
-.timeleft{
+.timer {
+  height: 100px;
+  width: 300px;
+  padding: 10px 5px;
+  border-radius: 18px;
+  position: relative;
+  top: 60px;
+  left: 950px;
+}
+
+.timeleft {
   display: flex;
   gap: 22px;
   position: absolute;
@@ -250,10 +261,11 @@ header div ul li button {
   text-align: center;
   display: flex;
   justify-content: center;
-  font-size: 50px;
+  font-size: 70px;
+  color: #03e9f4;
+  letter-spacing: 3px;
   position: relative;
   top: 450px;
-  color: #03e9f4;
 }
 
 .about_page {
@@ -287,8 +299,9 @@ header div ul li button {
   position: relative;
   text-align: center;
   top: 550px;
-  font-size: 50px;
+  font-size: 70px;
   color: #03e9f4;
+  letter-spacing: 3px;
 }
 
 .schedule {
@@ -312,53 +325,67 @@ header div ul li button {
   border-radius: 15px;
 }
 
-.reg_line, .ann_line, .hack_line{
+.reg_line,
+.ann_line,
+.hack_line {
   width: 120px;
   position: relative;
   left: 680px;
   bottom: 95px;
 }
 
-.idea_line, .team_line{
+.idea_line,
+.team_line {
   width: 130px;
   position: relative;
   right: 165px;
   bottom: 95px;
 }
 
-.one:hover .reg_line{
-  border: 2px solid #03e9f4;
-}
-.two:hover .idea_line{
-  border: 2px solid #03e9f4;
-}
-.three:hover .ann_line{
-  border: 2px solid #03e9f4;
-}
-.four:hover .team_line{
-  border: 2px solid #03e9f4;
-}
-.five:hover .hack_line{
+.one:hover .reg_line {
   border: 2px solid #03e9f4;
 }
 
-.one, .three, .five{
+.two:hover .idea_line {
+  border: 2px solid #03e9f4;
+}
+
+.three:hover .ann_line {
+  border: 2px solid #03e9f4;
+}
+
+.four:hover .team_line {
+  border: 2px solid #03e9f4;
+}
+
+.five:hover .hack_line {
+  border: 2px solid #03e9f4;
+}
+
+.one,
+.three,
+.five {
   position: relative;
   right: 50px;
 }
-.two, .four{
+
+.two,
+.four {
   position: relative;
   left: 180px;
 }
 
-.one i, .three i, .five i{
+.one i,
+.three i,
+.five i {
   position: relative;
   left: 800px;
   bottom: 112px;
   font-size: 35px;
 }
 
-.two i, .four i{
+.two i,
+.four i {
   position: relative;
   right: 200px;
   bottom: 112px;
@@ -497,8 +524,9 @@ header div ul li button {
 
 #prizes_heading {
   text-align: center;
+  font-size: 70px;
   color: #03e9f4;
-  font-size: 50px;
+  letter-spacing: 3px;
   position: relative;
   top: 710px;
   text-align: center;
@@ -554,21 +582,21 @@ header div ul li button {
   overflow: hidden;
 }
 
-.second:hover .sec-prize{
+.second:hover .sec-prize {
   background: #c0c0c0;
   color: lightcyan;
   box-shadow: 0 0 5px #c0c0c0, 0 0 25px #c0c0c0, 0 0 50px #c0c0c0,
     0 0 200px #c0c0c0;
 }
 
-.first:hover .first-prize{
+.first:hover .first-prize {
   background: rgb(253, 169, 183);
   color: lightcyan;
   box-shadow: 0 0 5px rgb(253, 169, 183), 0 0 25px rgb(253, 169, 183),
     0 0 50px rgb(253, 169, 183), 0 0 200px rgb(253, 169, 183);
 }
 
-.third:hover .third-prize{
+.third:hover .third-prize {
   background: rgb(189, 98, 98);
   color: rgb(251, 255, 224);
   box-shadow: 0 0 5px rgb(189, 98, 98), 0 0 25px rgb(189, 98, 98), 0 0 50px rgb(189, 98, 98), 0 0 200px rgb(189, 98, 98);
@@ -778,6 +806,7 @@ header div ul li button {
 #gallery_heading{
   font-size: 50px;
   color: #03e9f4;
+  letter-spacing: 3px;
   position: relative;
   top: 750px;
   text-align: center;
@@ -787,8 +816,9 @@ header div ul li button {
 #sponsor_heading{
   font-size: 50px;
   color: #03e9f4;
+  letter-spacing: 3px;
   position: relative;
-  top: 800px;
+  top: 140px;
   text-align: center;
 }
 
@@ -797,13 +827,16 @@ header div ul li button {
   color: white;
 }
 
+
 #title_faq {
   font-size: 50px;
   color: #03e9f4;
+  letter-spacing: 3px;
   position: relative;
   text-align: center;
-  top: 790px;
+  top: 200px;
 }
+
 /*
 
 .faq {
@@ -858,11 +891,10 @@ header div ul li button {
   align-items: center;
   margin-bottom: 50px;
   position: relative;
-  top: 840px;
-  left: 50px;
+  top: 250px;
 }
 
-.question_faq{
+.question_faq {
   font-size: 21px;
   font-weight: 400;
 }
@@ -876,7 +908,7 @@ header div ul li button {
   display: none;
 }
 
-.faq_section{
+.faq_section {
   min-height: 100vh;
   width: 85%;
   margin: 0 auto;
@@ -884,49 +916,49 @@ header div ul li button {
   flex-direction: column;
   align-items: center;
   /* margin-top: 50px; */
-
 }
 
-.faq{
+.faq {
   max-width: 700px;
   margin-top: 0.15rem;
   padding-bottom: 1 rem;
   cursor: pointer;
 }
 
-.answer{
+.answer {
   /* margin-top: 10px; */
   max-height: 0;
   overflow: hidden;
   transition: max-height 1.4s ease;
-  outline: none; 
+  outline: none;
 }
 
-.question{
+.question {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.faq.active .answer{
+.faq.active .answer {
   max-height: 200px;
   animation: fade 1s ease-in-out;
 }
 
-.faq.active .question_arrow{
+.faq.active .question_arrow {
   transform: rotate(180deg);
 }
 
-.question_arrow{
+.question_arrow {
   transition: transform 0.5s ease-in;
 }
 
-@keyframes fade{
-  from{
+@keyframes fade {
+  from {
     opacity: 0;
     transform: translateY(-10px);
   }
-  to{
+
+  to {
     opacity: 1;
     transform: translateY(0px);
   }
@@ -943,6 +975,7 @@ header div ul li button {
   justify-content: space-between;
   margin-left: 120px;
 }
+
 
 .faq, .answer{
   flex:1;
@@ -963,7 +996,7 @@ header div ul li button {
   font-size: 25px;
 }
 
-.footer_heading{
+.footer_heading {
   position: relative;
   top: 80px;
 }
@@ -979,13 +1012,14 @@ header div ul li button {
   background-color: #05070b;
   flex-direction: column;
   justify-content: center;
-  position: relative;
+  /* position: relative; */
   bottom: 0;
   left: 0;
   right: 0;
   top: 620px;
   margin: 0px;
   padding: 0px;
+  top: 400px;
 }
 
 .mact,
@@ -1019,12 +1053,12 @@ header div ul li button {
   font-size: 16px;
 }
 
-.mact_address{
+.mact_address {
   position: relative;
   top: 40px;
 }
 
-.name1{
+.name1 {
   position: relative;
   top: 40px;
 }
@@ -1054,7 +1088,7 @@ hr {
   margin-bottom: 0;
 }
 
-.emailID{
+.emailID {
   position: relative;
   top: 55px;
 }
@@ -1163,7 +1197,7 @@ hr {
   width: 100%;
 }
 
-.footer_container{
+.footer_container {
   position: relative;
   bottom: 0;
 }
@@ -1182,29 +1216,29 @@ hr {
   text-align: center;
 }
 
-.top_footer{
+.top_footer {
   margin: auto;
 }
 
 
 /* REGISTER BUTTON */
 
-body{
+body {
   font-family: 'Lato', sans-serif;
 }
 
-.wrapper_register{
+.wrapper_register {
   position: absolute;
   top: 490px;
   left: 423px;
   transform: translate(-50%, -50%);
 }
 
-.link_wrapper{
+.link_wrapper {
   position: relative;
 }
 
-.register_here{
+.register_here {
   display: block;
   width: 250px;
   height: 52px;
@@ -1220,7 +1254,7 @@ body{
   font-size: 18px;
 }
 
-.icon{
+.icon {
   width: 50px;
   height: 50px;
   border: 3px solid transparent;
@@ -1232,7 +1266,7 @@ body{
   transition: all .35s;
 }
 
-.icon svg{
+.icon svg {
   width: 30px;
   position: absolute;
   top: calc(50% - 15px);
@@ -1242,7 +1276,7 @@ body{
   transition: all .35s;
 }
 
-.register_here:hover{
+.register_here:hover {
   width: 200px;
   border: 3px solid red;
   background: transparent;
@@ -1250,7 +1284,7 @@ body{
   font-weight: bold;
 }
 
-.register_here:hover + .icon{
+.register_here:hover+.icon {
   border: 3px solid red;
   right: -25%;
 }
@@ -1349,89 +1383,89 @@ body{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: 
-      transform .5s,
-      filter .5s;
+  transition:
+    transform .5s,
+    filter .5s;
   filter: opacity(80%) brightness(85%) blur(1px);
   border-radius: 5px;
 }
 
-.gallery__image:hover{
+.gallery__image:hover {
   filter: opacity(100%) brightness(100%);
 }
 
 @media screen and (max-width: 768px) {
   .wrapper {
-      padding: 1rem;
-      position: relative;
-      left: 10px;
+    padding: 1rem;
+    position: relative;
+    left: 10px;
   }
 
   .gallery {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   /* Gallery Layout */
   .gallery__item--1 {
-      grid-column: 1 / span 1;
-      grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
   }
 
   .gallery__item--2 {
-      grid-column: 1 / span 1;
-      grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
   }
 
   .gallery__item--3 {
-      grid-column: 2 / span 1;
-      grid-row: 1 / span 2;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
   }
 
   .gallery__item--4 {
-      grid-column: 1 / span 1;
-      grid-row: 3 / span 2;
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 2;
   }
 
   .gallery__item--5 {
-      grid-column: 2 / span 1;
-      grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
   }
 
   .gallery__item--6 {
-      grid-column: 2 / span 2;
-      grid-row: 4 / span 1;
+    grid-column: 2 / span 2;
+    grid-row: 4 / span 1;
   }
 
   .gallery__item--7 {
     grid-column: 1 / span 1;
     grid-row: 5 / span 1;
-}
+  }
 
-.gallery__item--8 {
-  grid-column: 2 / span 1;
-  grid-row: 5 / span 1;
-} 
+  .gallery__item--8 {
+    grid-column: 2 / span 1;
+    grid-row: 5 / span 1;
+  }
 
   .gallery__overlay {
-      font-size: 1.25rem;
+    font-size: 1.25rem;
   }
 }
 
 @media screen and (max-width: 425px) {
   .gallery {
-      display: block;
+    display: block;
   }
 
   .gallery__item {
-      margin: .5rem;
+    margin: .5rem;
   }
 
   .gallery__link {
-      height: 80vw;
+    height: 80vw;
   }
 
   .gallery__overlay {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 }
 
