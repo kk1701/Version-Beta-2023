@@ -122,6 +122,10 @@ header div ul li button {
   border: none;
 }
 
+.menu{
+  display: none;
+}
+
 .versionbeta_logo {
   position: relative;
   top: 200px;
@@ -197,15 +201,15 @@ header div ul li button {
 
 .clock_desc{
   position: absolute;
-  right: 240px;
+  right: 210px;
   top: 280px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 #clock {
-  position: absolute;
+  /* position: absolute;
   right: 150px;
-  top: 360px;
+  top: 360px; */
   font-size: 18px;
   background-color: var(--primary);
   background-image: linear-gradient(-45degree, hsla(var(--hue), 10%, 10%, 0hsla(var(--hue), 10%, 10%, 0.2)),);
@@ -220,13 +224,26 @@ header div ul li button {
   font-weight: bold;
 }
 
+.timer{
+  height: 100px;
+  width: 300px;
+  padding: 10px 5px ;
+  border-radius: 18px;
+  position: relative;
+  top: 60px;
+  left: 950px;
+}
+
 .timeleft{
   display: flex;
   gap: 22px;
   position: absolute;
-  right: 140px;
-  bottom: 230px;
-  font-size: 18px;
+  left: 40px;
+  font-size: 16px;
+}
+
+.hours, .seconds, .colon{
+  color: red;
 }
 
 #about {
@@ -474,7 +491,7 @@ header div ul li button {
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 720px;
+  top: 660px;
   margin-top: 70px;
 }
 
@@ -780,7 +797,7 @@ header div ul li button {
   color: white;
 }
 
-.title_faq {
+#title_faq {
   font-size: 50px;
   color: #03e9f4;
   position: relative;
@@ -967,6 +984,8 @@ header div ul li button {
   left: 0;
   right: 0;
   top: 620px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .mact,
@@ -1110,7 +1129,7 @@ hr {
   display: inline-block;
   padding: 5px 0;
   position: relative;
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
 }
@@ -1266,7 +1285,7 @@ body{
 
 /* GALLERY */
 .wrapper {
-  max-width: 75rem;
+  max-width: 1000px;
   padding: 1.5rem;
   margin: 0 auto;
   position: relative;
@@ -1279,6 +1298,10 @@ body{
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 13.5rem);
   gap: 1rem;
+}
+
+.gallery div img{
+  border-radius: 12px;
 }
 
 /* Gallery Layout */
@@ -1411,4 +1434,8 @@ body{
       font-size: 1rem;
   }
 }
+
+
+
+
 

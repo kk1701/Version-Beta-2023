@@ -50,6 +50,7 @@
         <li><button class="header_content" onclick="scrollToFaq()">FAQS</button></li>
       </ul>
     </div>
+    <img src="./Assets/hambrger.png" alt="" class="menu">
   </header>
 
     <section id="home_page">
@@ -84,22 +85,29 @@
         </div>
       </div>
 
-      <p class="clock_desc">Registration starts in..</p>
-      <div id="clock">
-        <span class="clock_digit">0</span>
-        <span class="clock_digit">0</span>
-        <span class="clock_digit">:</span>
-        <span class="clock_digit">0</span>
-        <span class="clock_digit">0</span>
-        <span class="clock_digit">:</span>
-        <span class="clock_digit">0</span>
-        <span class="clock_digit">0</span>
-      </div>
-      <div class="timeleft">
-        <p>Days</p>
-        <p>Hours</p>
-        <p>Minutes</p>
-        <p>Seconds</p>
+      <div class="right">
+        <p class="clock_desc">Registration starts in..</p>
+        <div class="timer">
+          <div id="clock">
+            <span>0</span>
+            <span>0</span>
+            <span class="colon"> : </span>
+            <span>0</span>
+            <span>0</span>
+            <span class="colon"> : </span>
+            <span>0</span>
+            <span>0</span>
+            <span class="colon"> : </span>
+            <span>0</span>
+            <span>0</span>
+          </div>
+          <div class="timeleft">
+            <p>Days</p>
+            <p class="hours">Hours</p>
+            <p>Minutes</p>
+            <p class="seconds">Seconds</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -256,7 +264,6 @@
 
     <h1 id="gallery_heading">GALLERY</h1>
     <div class="wrapper">
-        
       <div class="gallery">
           <div class="gallery__item gallery__item--1">
                   <img src="Assets/img5.jpeg" class="gallery__image" />
@@ -513,9 +520,9 @@
   </div>
 
   <script>
-document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function () {
   
-  const timeoutDuration = 1000;
+    const timeoutDuration = 1000;
 
   setTimeout(function () {
       const preloader = document.getElementById("preloader");

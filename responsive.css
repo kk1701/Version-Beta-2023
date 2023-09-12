@@ -47,10 +47,12 @@
         right: 125px;
         bottom: 50px;
     }
-    .button-register{
-        width: 200px;
+    .register_here{
+        width: 180px;
         height: 50px;
         font-size: 20px;
+        position: relative;
+        left: 10px;
     }
 
     .clock_desc{
@@ -63,8 +65,8 @@
     }
     .timeleft{
         position: absolute;
-        bottom: 160px;
-        right: 130px;
+        right: 120px;
+        bottom: 250px;
         font-size: 14px;
     }
 
@@ -83,6 +85,10 @@
     #schedule_heading{
         font-size: 35px;
     }
+    .schedule{
+        position: relative;
+        right: 80px;
+    }
     .schedule_tabs{
         width: 550px;
     }
@@ -95,6 +101,17 @@
         position: relative;
         right: 150px;
     }
+    .reg_line, .ann_line, .hack_line{
+        width: 100px;
+        position: relative;
+        bottom: 90px;
+        left: 590px;
+    }
+    .idea_line, .team_line{
+        width: 98px;
+        position: relative;
+        right: 130px;
+    }
 
     .second, .third{
         height: 280px;
@@ -103,5 +120,44 @@
     .sec-prize{
         height: 80px;
     }
+
+    .wrapper{
+        width: 800px;
+
+    }
     
 }
+
+
+@media screen and (max-width: 880px){
+    .header_content{
+        display: none;
+    }
+    .menu{
+        display: block;
+        height: 35px;
+        width: 35px;
+        position: relative;
+        top: 5px;
+        right: 8px;
+    }
+    .left{
+        position: relative;
+        right: 100px;
+    }
+    .about_page{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .about_page div p{
+        width: 500px;
+    }
+    .team_photo img{
+        height: 400px;
+        width: 450px;
+    }
+}
+
+
+
