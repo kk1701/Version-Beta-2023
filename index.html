@@ -33,25 +33,28 @@
       <source src="./Assets/new_bac_comp.mp4" type="video/mp4" />
     </video>
 
-  <header>
-    <div class="logo">
-      <img src="./Assets/ISTE logo.svg" alt="ISTE LOGO" />
-    </div>
-    <div>
-      <ul>
-        <li><button class="header_content" onclick="scrollToTop()">HOME</button></li>
-        <li><button class="header_content" onclick="scrollToAbout()">ABOUT</button></li>
-        <li>
-          <button class="header_content" onclick="scrollToSchedule()">SCHEDULE</button>
-        </li>
-        <li><button class="header_content" onclick="scrollToPrizes()">PRIZES</button></li>
-        <li><button class="header_content" onclick="scrollToGallery()">GALLERY</button></li>
-        <li><button class="header_content" onclick="scrollToSponsor()">SPONSORS</button></li>
-        <li><button class="header_content" onclick="scrollToFaq()">FAQS</button></li>
-      </ul>
-    </div>
-    <img src="./Assets/hambrger.png" alt="" class="menu">
-  </header>
+    <header class="header">
+      <div class="logo">
+        <a href="#">
+          <img src="Assets/ISTE logo.svg" alt="">
+        </a>
+      </div>
+      
+      <div class="navigation">
+        <input type="checkbox" class="toggle-menu">
+        <div class="hamburger"></div>
+        <ul class="menu">
+          <li><button class="header_btn">HOME</a></li>
+          <li><button class="header_btn">ABOUT</a></li>
+          <li><button class="header_btn">SCHEDULE</a></li>
+          <li><button class="header_btn">PRIZES</a></li>
+          <li><button class="header_btn">GALLERY</a></li>
+          <li><button class="header_btn">SPONSORS</a></li>
+          <li><button class="header_btn">FAQS</a></li>
+        </ul>
+
+      </div>
+    </header>
 
     <section id="home_page">
       <div class="left">
