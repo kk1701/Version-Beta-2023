@@ -35,19 +35,19 @@ function scrollToSchedule() {
 }
 
 function scrollToPrizes() {
-  window.scrollTo({ top: 2830, behavior: "smooth" });
+  window.scrollTo({ top: 2500, behavior: "smooth" });
 }
 
 function scrollToFaq() {
-  window.scrollTo({ top: 6100, behavior: "smooth" });
+  window.scrollTo({ top: 5670, behavior: "smooth" });
 }
 
 function scrollToGallery() {
-  window.scrollTo({ top: 3570, behavior: "smooth" });
+  window.scrollTo({ top: 3270, behavior: "smooth" });
 }
 
 function scrollToSponsor() {
-  window.scrollTo({ top: 5400, behavior: "smooth" });
+  window.scrollTo({ top: 4800, behavior: "smooth" });
 }
 
 // faqs
