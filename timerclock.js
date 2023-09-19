@@ -1,4 +1,4 @@
-const countdownDate = new Date("September 22, 2023 00:30:00").getTime();
+const countdownDate = new Date("September 30, 2023 00:30:00").getTime();
 
 
 const countdownInterval = setInterval(function () {
