@@ -247,11 +247,12 @@
     }
     .right{
         position: relative;
-        right: 270px;
+        right: 350px;
         top: 80px;
     }
 
     #about{
+        font-size: 50px;
         position: relative;
         top: 600px;
         left: 180px;
@@ -261,11 +262,20 @@
         top: 650px;
         left: 180px;
     }
+    .about_page div p{
+        font-size: 20px;
+        width: 600px;
+    }
+    .team_photo img{
+        width: 560px;
+        height: 600px;
+    }
 
     #schedule_heading{
         position: relative;
         top: 750px;
         left: 180px;
+        font-size: 50px;
     }
     .schedule{
         position: relative;
@@ -273,37 +283,39 @@
         left: 150px;
     }
     .schedule_tabs{
-        width: 350px;
-        height: 350px;
+        width: 400px;
+        height: 280px;
         border: 5px solid #03e9f4;
     }
     .one i, .three i, .five i{
         font-size: 60px;
         position: absolute;
-        top: 140px;
-        left: 500px;
+        top: 100px;
+        left: 530px;
     }
     .two i, .four i{
         font-size: 60px;
         position: relative;
         right: 200px;
+        bottom: 100px;
     }
     .reg_line, .ann_line, .hack_line{
         border: 3px solid #03e9f4;
-        width: 160px;
+        width: 140px;
         position: relative;
-        left: 310px;
-        bottom: 40px;
+        left: 360px;
+        bottom: 70px;
     }
     .idea_line, .team_line{
         border: 3px solid #03e9f4;
         width: 120px;
         position: relative;
         right: 150px;
-        bottom: 40px;
+        bottom: 70px;
     }
 
     #prizes_heading{
+        font-size: 50px;
         position: relative;
         top: 1000px;
         left: 180px;
@@ -315,6 +327,7 @@
     }
     
     #gallery_heading{
+        font-size: 50px;
         position: relative;
         top: 1100px;
         left: 180px;
@@ -336,6 +349,7 @@
     }
 
     #sponsor_heading{
+        font-size: 50px;
         position: relative;
         top: 600px;
         left: 30px;
@@ -347,6 +361,7 @@
     }
 
     #title_faq{
+        font-size: 50px;
         position: relative;
         top: 750px;
         left: 30px;
