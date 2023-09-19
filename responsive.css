@@ -125,6 +125,38 @@
 
 
 @media screen and (max-width: 880px){
+    .toggle-menu,
+    .hamburger {
+      display: block;
+    }
+  
+    .header {
+      padding: 10px 20px;
+    }
+  
+    .menu {
+      justify-content: start;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 40px;
+      background: #00082C;
+      width: 300px;
+      height: 100%;
+      padding-top: 65px;
+    }
+  
+    .menu li {
+      width: 100%;
+    }
+  
+    .menu li .header_btn,
+    .menu li .header_btn:hover {
+      padding: 30px;
+      font-size: 24px;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+    }
     .header_content{
         display: none;
     }
@@ -186,6 +218,146 @@
 }
 
 
-@media screen and (min-width: 400px){
+@media screen and (max-width: 450px) {
+    .versionbeta_logo img{
+        width: 550px;
+        height: 200px;
+        position: relative;
+    }
+    .version span{
+        position: relative;
+        right: 180px;
+    }
+    .link_wrapper{
+        position: relative;
+        top: 10px;
+        right: 60px;
+    }
+    .left{
+        position: relative;
+        left: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .clock_desc{
+        width: 200px;
+        position: absolute;
+        left: 550px;
+    }
+    .right{
+        position: relative;
+        right: 270px;
+        top: 80px;
+    }
+
+    #about{
+        position: relative;
+        top: 600px;
+        left: 180px;
+    }
+    .about_page{
+        position: relative;
+        top: 650px;
+        left: 180px;
+    }
+
+    #schedule_heading{
+        position: relative;
+        top: 750px;
+        left: 180px;
+    }
+    .schedule{
+        position: relative;
+        top: 830px;
+        left: 150px;
+    }
+    .schedule_tabs{
+        width: 350px;
+        height: 350px;
+        border: 5px solid #03e9f4;
+    }
+    .one i, .three i, .five i{
+        font-size: 60px;
+        position: absolute;
+        top: 140px;
+        left: 500px;
+    }
+    .two i, .four i{
+        font-size: 60px;
+        position: relative;
+        right: 200px;
+    }
+    .reg_line, .ann_line, .hack_line{
+        border: 3px solid #03e9f4;
+        width: 160px;
+        position: relative;
+        left: 310px;
+        bottom: 40px;
+    }
+    .idea_line, .team_line{
+        border: 3px solid #03e9f4;
+        width: 120px;
+        position: relative;
+        right: 150px;
+        bottom: 40px;
+    }
+
+    #prizes_heading{
+        position: relative;
+        top: 1000px;
+        left: 180px;
+    }
+    .prizes{
+        position: relative;
+        top: 1000px;
+        left: 180px;
+    }
     
+    #gallery_heading{
+        position: relative;
+        top: 1100px;
+        left: 180px;
+    }
+    .gallery {
+      display: block;
+      position: relative;
+      top: 400px;
+      left: 20px;
+    }
+    .gallery__item {
+      margin: .5rem;
+    }
+    .gallery__link {
+      height: 80vw;
+    }
+    .gallery__overlay {
+      font-size: 1rem;
+    }
+
+    #sponsor_heading{
+        position: relative;
+        top: 600px;
+        left: 30px;
+    }
+    .sponsors{
+        position: relative;
+        top: 600px;
+        left: 30px;
+    }
+
+    #title_faq{
+        position: relative;
+        top: 750px;
+        left: 30px;
+    }
+    .faq_section{
+        position: relative;
+        top: 850px;
+        left: 20px;
+    }
+    .faq{
+        width: 500px;
+        /* border-bottom: 3px solid #03e9f4; */
+    }
 }
