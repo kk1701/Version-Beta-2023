@@ -360,4 +360,10 @@
         width: 500px;
         /* border-bottom: 3px solid #03e9f4; */
     }
+
+    .footer-container-main{
+        position: relative;
+        top: 1000px;
+        width: 800px;
+    }
 }
