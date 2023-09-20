@@ -1247,7 +1247,7 @@ header div ul li button {
 }
 
 .sponsors--i img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 
@@ -1787,7 +1787,7 @@ body {
   transition:
     transform .5s,
     filter .5s;
-  filter: opacity(80%) brightness(85%) blur(1px);
+  filter: opacity(95%) brightness(85%) blur(1px);
   border-radius: 5px;
 }
 
