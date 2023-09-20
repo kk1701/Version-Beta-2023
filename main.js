@@ -1,14 +1,26 @@
 // Pre Loader
-document.addEventListener("DOMContentLoaded", function () {
-  const timeoutDuration = 4000;
 
-  setTimeout(function () {
-    const preloader = document.getElementById("preloader");
-    if (preloader) {
-      preloader.style.display = "none";
-    }
-  }, timeoutDuration);
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   const timeoutDuration = 4000;
+
+//   setTimeout(function () {
+//     const preloader = document.getElementById("preloader");
+//     if (preloader) {
+//       preloader.style.display = "none";
+//     }
+//   }, timeoutDuration);
+// });
+
+// Function to hide the preloader
+function hidePreloader() {
+  const preloader = document.querySelector('.preloader');
+  preloader.style.display = 'none';
+  document.body.classList.add('loaded');
+}
+
+// Set a timeout of 8 seconds (8000 milliseconds) to hide the preloader
+setTimeout(hidePreloader, 8000);
+
 
 // Bottom to Top
 window.addEventListener("scroll", toggleGoToTopButton);
