@@ -290,6 +290,10 @@
             height: 60px;
 
         }
+        
+        .register_here:hover{
+            height: 80px;
+        }
 
         .link_wrapper {
             position: relative;
