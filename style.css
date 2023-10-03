@@ -409,7 +409,7 @@
 
 
   @media screen and (max-width: 880px) {
-
+    
     .toggle-menu,
     .hamburger {
       display: block;
@@ -426,7 +426,7 @@
       position: fixed;
       top: 0;
       left: 20px;
-      background-color: transparent;
+      background-color:transparent;
       width: 100px;
       height: 100vh;
       padding-top: 65px;
@@ -1894,7 +1894,7 @@ header div ul li button {
     right: 0;
     margin-left: -290px;
     margin-right: 280px;
-    width: 100vw;
+    width: 105vw;
     color: white;
     background-color: rgba(11, 32, 70, 0.541);
     min-height: 50vh;
