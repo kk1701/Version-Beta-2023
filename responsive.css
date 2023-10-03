@@ -1,12 +1,12 @@
-@media (min-aspect-ratio: 16/9){
-    #bgvideo{
+@media (min-aspect-ratio: 16/9) {
+    #bgvideo {
         width: 100%;
         height: auto;
     }
 }
 
-@media (max-aspect-ratio: 16/9){
-    #bgvideo{
+@media (max-aspect-ratio: 16/9) {
+    #bgvideo {
         width: auto;
         height: 100%;
     }
@@ -14,153 +14,184 @@
 
 
 
-@media screen and (max-width: 1150px){
-    body{
+@media screen and (max-width: 1150px) {
+    body {
         overflow-x: hidden;
         /* background: url(./Assets/Screenshot\ \(31\).png);
         background-size: cover; */
         /* background-color: black; */
-        
+
     }
 
-    .header{
+    .header {
         position: fixed;
         z-index: 2;
     }
-    .left{
+
+    .left {
         position: relative;
         right: 0px;
-        
+
     }
-    .versionbeta_logo img{
+
+    .versionbeta_logo img {
         height: 150px;
         width: 380px;
     }
-    .version-beta{
+
+    .version-beta {
         font-size: 18px;
         position: relative;
         right: 110px;
     }
 
-    .link_wrapper{
+    .link_wrapper {
         position: relative;
         right: 125px;
         bottom: 50px;
     }
-    .register_here{
+
+    .register_here {
         width: 180px;
         height: 50px;
         font-size: 20px;
         position: relative;
         left: 10px;
     }
-    .clock_desc{
+
+    .clock_desc {
         position: absolute;
         top: 300px;
         right: 150px;
     }
-    .timer{
+
+    .timer {
         position: absolute;
         top: 350px;
         left: 650px;
     }
 
-    #about, #schedule_heading, #prizes_heading, #gallery_heading, #sponsor_heading, #gallery_heading, #title_faq{
+    #about,
+    #schedule_heading,
+    #prizes_heading,
+    #gallery_heading,
+    #sponsor_heading,
+    #gallery_heading,
+    #title_faq {
         font-size: 35px;
     }
-    .team_photo img{
+
+    .team_photo img {
         height: 420px;
         width: 430px;
     }
-    .about_info{
+
+    .about_info {
         font-size: 17px;
         width: 350px;
     }
 
-    #schedule_heading{
+    #schedule_heading {
         font-size: 35px;
     }
-    .schedule{
+
+    .schedule {
         position: relative;
         right: 80px;
     }
-    .schedule_tabs{
+
+    .schedule_tabs {
         width: 550px;
     }
-    .one i, .three i, .five i{
+
+    .one i,
+    .three i,
+    .five i {
         position: absolute;
         top: 70px;
         left: 720px;
     }
-    .two i, .four i{
+
+    .two i,
+    .four i {
         position: relative;
         right: 150px;
     }
-    .reg_line, .ann_line, .hack_line{
+
+    .reg_line,
+    .ann_line,
+    .hack_line {
         width: 100px;
         position: relative;
         bottom: 90px;
         left: 590px;
     }
-    .idea_line, .team_line{
+
+    .idea_line,
+    .team_line {
         width: 98px;
         position: relative;
         right: 130px;
     }
 
-    .second, .third{
+    .second,
+    .third {
         height: 280px;
         width: 150px;
     }
-    .sec-prize{
+
+    .sec-prize {
         height: 80px;
     }
 
-    .wrapper{
+    .wrapper {
         width: 800px;
 
     }
-    
+
 }
 
 
-@media screen and (max-width: 880px){
+@media screen and (max-width: 880px) {
+
     .toggle-menu,
     .hamburger {
-      display: block;
+        display: block;
     }
-  
+
     .header {
-      padding: 10px 20px;
+        padding: 10px 20px;
     }
-  
+
     .menu {
-      justify-content: start;
-      flex-direction: column;
-      align-items: center;
-      position: fixed;
-      top: 0;
-      left: 40px;
-      background: #00082C;
-      width: 300px;
-      height: 100%;
-      padding-top: 65px;
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 40px;
+        background: #00082C;
+        width: 300px;
+        height: 100%;
+        padding-top: 65px;
     }
-  
+
     .menu li {
-      width: 100%;
+        width: 100%;
     }
-  
+
     .menu li .header_btn,
     .menu li .header_btn:hover {
-      padding: 30px;
-      font-size: 24px;
-      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+        padding: 30px;
+        font-size: 24px;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
     }
-    .header_content{
+
+    .header_content {
         display: none;
     }
-    .menu{
+
+    .menu {
         display: block;
         height: 35px;
         width: 35px;
@@ -168,49 +199,57 @@
         top: 5px;
         right: 8px;
     }
-    .left{
+
+    .left {
         position: relative;
         right: 120px;
     }
-    .timer{
+
+    .timer {
         position: absolute;
         left: 520px;
         top: 350px;
     }
-    .about_page{
+
+    .about_page {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
     }
-    .about_page div p{
+
+    .about_page div p {
         width: 500px;
     }
-    .team_photo img{
+
+    .team_photo img {
         height: 400px;
         width: 450px;
     }
 
-    .schedule_tabs{
+    .schedule_tabs {
         width: 450px;
     }
 
-    .second img, .third img{
+    .second img,
+    .third img {
         height: 280px;
         width: 220px;
     }
-    .first img{
+
+    .first img {
         height: 350px;
         width: 250px;
     }
 
-    .wrapper{
+    .wrapper {
         width: 720px;
     }
-    .gallery__image{
+
+    .gallery__image {
         filter: opacity(100%) brightness(100%);
     }
 
-    .faq_section div{
+    .faq_section div {
         position: relative;
         right: 0px;
         width: 600px;
@@ -218,216 +257,248 @@
 }
 
 
-<<<<<<< HEAD
 @media screen and (max-width: 450px) {
-    .header{
+    .header {
         height: 120px;
     }
-    .logo a img{
+
+    .logo a img {
         height: 120px;
     }
-    .navigation input{
+
+    .navigation input {
         height: 50px;
         width: 150px;
     }
 
-=======
-@media screen and (max-width: 480px) {
->>>>>>> 4d5c6b35e8ba0d1fd84f9d0648020a845c62c7eb
-    .versionbeta_logo img{
-        width: 550px;
-        height: 220px;
-        position: relative;
-    }
-    .version span{
-        position: relative;
-        right: 150px;
-        font-size: 30px;
-    }
+    @media screen and (max-width: 480px) {
+        .versionbeta_logo img {
+            width: 550px;
+            height: 220px;
+            position: relative;
+        }
 
-    .register_here{
-        font-size: 30px;
-        width: 260px;
-        height: 60px;
-        
-    }
-    .link_wrapper{
-        position: relative;
-        top: 50px;
-        right: 30px;
-    }
-    
-    .left{
-        position: relative;
-        left: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+        .version span {
+            position: relative;
+            right: 150px;
+            font-size: 30px;
+        }
 
-    .clock_desc{
-        width: 300px;
-        position: absolute;
-        left: 550px;
-        top: 320px;
-        font-size: 25px;
-    }
-    #clock{
-        position: relative;
-        top: 20px;
-        left: 20px;
-        width: 400px;
-        font-size: 50px;
-    }
-    .timeleft{
-        position: relative;
-        top: 40px;
-        left: 30px;
-        font-size: 24px;
-    }
-    .right{
-        position: relative;
-        right: 350px;
-        top: 80px;
-    }
+        .register_here {
+            font-size: 30px;
+            width: 260px;
+            height: 60px;
 
-    #about{
-        font-size: 65px;
-        position: relative;
-        top: 650px;
-        left: 180px;
-    }
-    .about_page{
-        position: relative;
-        top: 700px;
-        left: 180px;
-    }
-    .about_page div p{
-        font-size: 30px;
-    }
-    .team_photo img{
-        width: 620px;
-        height: 600px;
-    }
+        }
 
-    #schedule_heading{
-        position: relative;
-        top: 800px;
-        left: 180px;
-        font-size: 65px;
-    }
-    .schedule{
-        position: relative;
-        top: 900px;
-        left: 120px;
-    }
-    .schedule_tabs{
-        width: 400px;
-        height: 350px;
-        border: 5px solid #03e9f4;
-    }
-    .schedule_tabs a{
-        font-size: 32px;
-        width: 320px;
-    }
-    .info{
-        font-size: 26px;
-    }
-    .one i, .three i, .five i{
-        font-size: 60px;
-        position: absolute;
-        top: 140px;
-        left: 530px;
-    }
-    .two i, .four i{
-        font-size: 60px;
-        position: relative;
-        right: 200px;
-        bottom: 160px;
-    }
-    .reg_line, .ann_line, .hack_line{
-        border: 3px solid #03e9f4;
-        width: 140px;
-        position: relative;
-        left: 360px;
-        bottom: 120px;
-    }
-    .idea_line, .team_line{
-        border: 3px solid #03e9f4;
-        width: 120px;
-        position: relative;
-        right: 150px;
-        bottom: 130px;
-    }
+        .link_wrapper {
+            position: relative;
+            top: 50px;
+            right: 30px;
+        }
 
-    #prizes_heading{
-        font-size: 65px;
-        position: relative;
-        top: 1050px;
-        left: 180px;
-    }
-    .prizes{
-        position: relative;
-        top: 1000px;
-        left: 180px;
-    }
-    
-    #gallery_heading{
-        font-size: 65px;
-        position: relative;
-        top: 1100px;
-        left: 180px;
-    }
-    .gallery {
-      display: block;
-      position: relative;
-      top: 400px;
-      left: 20px;
-    }
-    .gallery__item {
-      margin: .5rem;
-    }
-    .gallery__link {
-      height: 80vw;
-    }
-    .gallery__overlay {
-      font-size: 1rem;
-    }
+        .left {
+            position: relative;
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-    #sponsor_heading{
-        font-size: 65px;
-        position: relative;
-        top: 600px;
-        left: 30px;
-    }
-    .sponsors{
-        position: relative;
-        top: 600px;
-        left: 30px;
-    }
+        .clock_desc {
+            width: 300px;
+            position: absolute;
+            left: 550px;
+            top: 320px;
+            font-size: 25px;
+        }
 
-    #title_faq{
-        font-size: 65px;
-        position: relative;
-        top: 750px;
-        left: 30px;
-    }
-    .faq_section{
-        position: relative;
-        top: 850px;
-        left: 20px;
-    }
-    .faq{
-        width: 500px;
-        /* border-bottom: 3px solid #03e9f4; */
-    }
-    .question_faq, .answer_faq{
-        font-size: 28px;
-    }
+        #clock {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            width: 400px;
+            font-size: 50px;
+        }
 
-    .footer-container-main{
-        position: relative;
-        top: 1000px;
-        width: 800px;
+        .timeleft {
+            position: relative;
+            top: 40px;
+            left: 30px;
+            font-size: 24px;
+        }
+
+        .right {
+            position: relative;
+            right: 350px;
+            top: 80px;
+        }
+
+        #about {
+            font-size: 65px;
+            position: relative;
+            top: 650px;
+            left: 180px;
+        }
+
+        .about_page {
+            position: relative;
+            top: 700px;
+            left: 180px;
+        }
+
+        .about_page div p {
+            font-size: 30px;
+        }
+
+        .team_photo img {
+            width: 620px;
+            height: 600px;
+        }
+
+        #schedule_heading {
+            position: relative;
+            top: 800px;
+            left: 180px;
+            font-size: 65px;
+        }
+
+        .schedule {
+            position: relative;
+            top: 900px;
+            left: 120px;
+        }
+
+        .schedule_tabs {
+            width: 400px;
+            height: 350px;
+            border: 5px solid #03e9f4;
+        }
+
+        .schedule_tabs a {
+            font-size: 32px;
+            width: 320px;
+        }
+
+        .info {
+            font-size: 26px;
+        }
+
+        .one i,
+        .three i,
+        .five i {
+            font-size: 60px;
+            position: absolute;
+            top: 140px;
+            left: 530px;
+        }
+
+        .two i,
+        .four i {
+            font-size: 60px;
+            position: relative;
+            right: 200px;
+            bottom: 160px;
+        }
+
+        .reg_line,
+        .ann_line,
+        .hack_line {
+            border: 3px solid #03e9f4;
+            width: 140px;
+            position: relative;
+            left: 360px;
+            bottom: 120px;
+        }
+
+        .idea_line,
+        .team_line {
+            border: 3px solid #03e9f4;
+            width: 120px;
+            position: relative;
+            right: 150px;
+            bottom: 130px;
+        }
+
+        #prizes_heading {
+            font-size: 65px;
+            position: relative;
+            top: 1050px;
+            left: 180px;
+        }
+
+        .prizes {
+            position: relative;
+            top: 1000px;
+            left: 180px;
+        }
+
+        #gallery_heading {
+            font-size: 65px;
+            position: relative;
+            top: 1100px;
+            left: 180px;
+        }
+
+        .gallery {
+            display: block;
+            position: relative;
+            top: 400px;
+            left: 20px;
+        }
+
+        .gallery__item {
+            margin: .5rem;
+        }
+
+        .gallery__link {
+            height: 80vw;
+        }
+
+        .gallery__overlay {
+            font-size: 1rem;
+        }
+
+        #sponsor_heading {
+            font-size: 65px;
+            position: relative;
+            top: 600px;
+            left: 30px;
+        }
+
+        .sponsors {
+            position: relative;
+            top: 600px;
+            left: 30px;
+        }
+
+        #title_faq {
+            font-size: 65px;
+            position: relative;
+            top: 750px;
+            left: 30px;
+        }
+
+        .faq_section {
+            position: relative;
+            top: 850px;
+            left: 20px;
+        }
+
+        .faq {
+            width: 500px;
+            border-bottom: 3px solid #03e9f4;
+        }
+
+        .question_faq,
+        .answer_faq {
+            font-size: 28px;
+        }
+
+        .footer-container-main {
+            position: relative;
+            top: 1000px;
+            width: 800px;
+        }
     }
 }
