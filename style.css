@@ -6,13 +6,47 @@
 
 /* LOADER */
 
+<<<<<<< HEAD
 #preloader {
   height: 100%;
   width: 100%;
+=======
+/* #preloader {
+  max-height: 100%;
+  max-width: 100%;
+>>>>>>> 4d5c6b35e8ba0d1fd84f9d0648020a845c62c7eb
   position: fixed;
   z-index: 30000;
   background: url('Assets/loader_gif.gif') no-repeat center center;
+} */
+
+/* Preloader styles */
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
+
+.preloader img {
+  max-width: 300%;
+  max-height: 300%;
+}
+
+/* Hide preloader after content is loaded */
+.loaded .preloader {
+  opacity: 0;
+  pointer-events: none;
+}
+
 
 /* SCROLL BAR */
 
@@ -1219,7 +1253,7 @@ header div ul li button {
 }
 
 .sponsors--i img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 
@@ -1759,7 +1793,7 @@ body {
   transition:
     transform .5s,
     filter .5s;
-  filter: opacity(80%) brightness(85%) blur(1px);
+  filter: opacity(95%) brightness(85%) blur(1px);
   border-radius: 5px;
 }
 

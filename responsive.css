@@ -218,6 +218,7 @@
 }
 
 
+<<<<<<< HEAD
 @media screen and (max-width: 450px) {
     .header{
         height: 120px;
@@ -230,6 +231,9 @@
         width: 150px;
     }
 
+=======
+@media screen and (max-width: 480px) {
+>>>>>>> 4d5c6b35e8ba0d1fd84f9d0648020a845c62c7eb
     .versionbeta_logo img{
         width: 550px;
         height: 220px;
