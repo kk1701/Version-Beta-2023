@@ -7,7 +7,7 @@
 /* LOADER */
 
 #preloader {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: fixed;
   z-index: 30000;
@@ -614,7 +614,7 @@ header div ul li button {
 .hours,
 .seconds,
 .colon {
-  color: red;
+  color: #03e9f4;
 }
 
 #about {

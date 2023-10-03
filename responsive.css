@@ -219,31 +219,67 @@
 
 
 @media screen and (max-width: 450px) {
+    .header{
+        height: 120px;
+    }
+    .logo a img{
+        height: 120px;
+    }
+    .navigation input{
+        height: 50px;
+        width: 150px;
+    }
+
     .versionbeta_logo img{
         width: 550px;
-        height: 200px;
+        height: 220px;
         position: relative;
     }
     .version span{
         position: relative;
-        right: 180px;
+        right: 150px;
+        font-size: 30px;
+    }
+
+    .register_here{
+        font-size: 30px;
+        width: 260px;
+        height: 60px;
+        
     }
     .link_wrapper{
         position: relative;
-        top: 10px;
-        right: 60px;
+        top: 50px;
+        right: 30px;
     }
+    
     .left{
         position: relative;
-        left: 50px;
+        left: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .clock_desc{
-        width: 200px;
+        width: 300px;
         position: absolute;
         left: 550px;
+        top: 320px;
+        font-size: 25px;
+    }
+    #clock{
+        position: relative;
+        top: 20px;
+        left: 20px;
+        width: 400px;
+        font-size: 50px;
+    }
+    .timeleft{
+        position: relative;
+        top: 40px;
+        left: 30px;
+        font-size: 24px;
     }
     .right{
         position: relative;
@@ -252,72 +288,78 @@
     }
 
     #about{
-        font-size: 50px;
-        position: relative;
-        top: 600px;
-        left: 180px;
-    }
-    .about_page{
+        font-size: 65px;
         position: relative;
         top: 650px;
         left: 180px;
     }
+    .about_page{
+        position: relative;
+        top: 700px;
+        left: 180px;
+    }
     .about_page div p{
-        font-size: 20px;
-        width: 600px;
+        font-size: 30px;
     }
     .team_photo img{
-        width: 560px;
+        width: 620px;
         height: 600px;
     }
 
     #schedule_heading{
         position: relative;
-        top: 750px;
+        top: 800px;
         left: 180px;
-        font-size: 50px;
+        font-size: 65px;
     }
     .schedule{
         position: relative;
-        top: 830px;
-        left: 150px;
+        top: 900px;
+        left: 120px;
     }
     .schedule_tabs{
         width: 400px;
-        height: 280px;
+        height: 350px;
         border: 5px solid #03e9f4;
+    }
+    .schedule_tabs a{
+        font-size: 32px;
+        width: 320px;
+    }
+    .info{
+        font-size: 26px;
     }
     .one i, .three i, .five i{
         font-size: 60px;
         position: absolute;
-        top: 100px;
+        top: 140px;
         left: 530px;
     }
     .two i, .four i{
         font-size: 60px;
         position: relative;
         right: 200px;
-        bottom: 100px;
+        bottom: 160px;
     }
     .reg_line, .ann_line, .hack_line{
         border: 3px solid #03e9f4;
         width: 140px;
         position: relative;
         left: 360px;
-        bottom: 70px;
+        bottom: 120px;
     }
     .idea_line, .team_line{
         border: 3px solid #03e9f4;
         width: 120px;
         position: relative;
         right: 150px;
-        bottom: 70px;
+        bottom: 130px;
     }
 
     #prizes_heading{
-        font-size: 50px;
+        font-size: 65px;
         position: relative;
-        top: 1000px;
+        top: 1050px;
         left: 180px;
     }
     .prizes{
@@ -327,7 +369,7 @@
     }
     
     #gallery_heading{
-        font-size: 50px;
+        font-size: 65px;
         position: relative;
         top: 1100px;
         left: 180px;
@@ -349,7 +391,7 @@
     }
 
     #sponsor_heading{
-        font-size: 50px;
+        font-size: 65px;
         position: relative;
         top: 600px;
         left: 30px;
@@ -361,7 +403,7 @@
     }
 
     #title_faq{
-        font-size: 50px;
+        font-size: 65px;
         position: relative;
         top: 750px;
         left: 30px;
@@ -374,6 +416,9 @@
     .faq{
         width: 500px;
         /* border-bottom: 3px solid #03e9f4; */
+    }
+    .question_faq, .answer_faq{
+        font-size: 28px;
     }
 
     .footer-container-main{
