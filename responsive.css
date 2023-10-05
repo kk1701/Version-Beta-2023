@@ -101,7 +101,8 @@
     }
 
     .schedule_tabs {
-        width: 550px;
+        width: 90px;
+        height: 700px;
     }
 
     .one i,
@@ -284,7 +285,7 @@
             font-size: 30px;
         }
 
-        .register_here {
+        .register_here{
             font-size: 30px;
             width: 260px;
             height: 60px;
@@ -334,7 +335,63 @@
             top: 80px;
         }
 
-        #about {
+
+        .register_here {
+            font-size: 30px;
+            width: 260px;
+            height: 60px;
+
+        }
+        
+        .register_here:hover{
+            width: 260px;
+        }
+
+        .link_wrapper {
+            position: relative;
+            top: 50px;
+            right: 30px;
+        }
+
+        .left {
+            position: relative;
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .clock_desc {
+            width: 300px;
+            position: absolute;
+            left: 550px;
+            top: 320px;
+            font-size: 25px;
+        }
+
+        #clock {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            width: 400px;
+            font-size: 50px;
+        }
+
+        .timeleft {
+            position: relative;
+            top: 40px;
+            left: 30px;
+            font-size: 24px;
+        }
+
+        .right {
+            position: relative;
+            right: 350px;
+            top: 80px;
+        }
+
+
+        #about{
             font-size: 65px;
             position: relative;
             top: 650px;
@@ -370,8 +427,8 @@
         }
 
         .schedule_tabs {
-            width: 400px;
-            height: 350px;
+            width: 520px;
+            height: 450px;
             border: 5px solid #03e9f4;
         }
 
@@ -380,13 +437,18 @@
             width: 320px;
         }
 
+        .dates{
+            font-size: 35px;
+        }
+
         .info {
-            font-size: 26px;
+            font-size: 25px;
         }
 
         .one i,
         .three i,
         .five i {
+            display: none;
             font-size: 60px;
             position: absolute;
             top: 140px;
@@ -395,6 +457,7 @@
 
         .two i,
         .four i {
+            display: none;
             font-size: 60px;
             position: relative;
             right: 200px;
@@ -404,6 +467,7 @@
         .reg_line,
         .ann_line,
         .hack_line {
+            display: none;
             border: 3px solid #03e9f4;
             width: 140px;
             position: relative;
@@ -413,6 +477,7 @@
 
         .idea_line,
         .team_line {
+            display: none;
             border: 3px solid #03e9f4;
             width: 120px;
             position: relative;
