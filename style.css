@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html{
+  scroll-padding-top: 4rem;
+}
+
 /* LOADER */
 #preloader {
   height: 100%;
@@ -270,7 +274,7 @@
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
 
-  .header {
+  /* .header {
     position: fixed;
     z-index: 4;
     width: 100%;
@@ -443,7 +447,7 @@
       box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
     }
 
-  }
+  } */
 
 
   /* BODY */
@@ -2194,4 +2198,214 @@ color:#03e9f4;
     color: white;
     text-decoration: none;
   }
+}
+
+/* HEADER */
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+nav{
+  background: #00082c;
+  height: 80px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+label.logo{
+  font-size: 35px;
+  line-height: 125px;
+  padding: 0 50px;
+}
+/* nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  z-index: 1;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+} */
+
+/* li:before{
+  content: "";
+  position: absolute;
+  height: 33.33%;
+  width: 0;
+  background-color: #03e9f4;
+  right: 0;
+  z-index: 0;
+  top: 33.33%;
+  transition: all 0.5s;
+}
+
+li:after{
+  content: "";
+  position: absolute;
+  height: 33.33%;
+  width: 0;
+  background-color: #03e9f4;
+  left: 0;
+  z-index: 0;
+  bottom: 0;
+  transition: all 0.5s;
+}
+
+a:before{
+  position: absolute;
+  content: "";
+  height: 33.33%;
+  width: 0;
+  background-color: #03e9f4;
+  bottom: 66.66%;
+  left: 0;
+  transition: all 0.5s;
+}
+
+li:hover:before,
+li:hover:after,
+li:hover a:before{
+  width: 100%;
+} */
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    z-index: 1000000;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #00082c;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+/* section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+} */
+
+
+.snip1189 {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  float: right;
+  margin-right: 20px;
+}
+.snip1189 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1189 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1em;
+  padding: 0;
+  line-height: 55px;
+  
+}
+.snip1189 a {
+  padding: 0.5em 0.8em;
+  margin: 0.2em 0;
+  display: block;
+  color: whitesmoke;
+  position: relative;
+  text-decoration: none;
+}
+.snip1189 a:before,
+.snip1189 a:after {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+.snip1189 a:before {
+  left: 0;
+  top: 0;
+  border-left: 3px solid #03e9f4;
+  border-top: 3px solid #03e9f4;
+  -webkit-transform: translate(100%, 50%);
+  transform: translate(100%, 50%);
+}
+.snip1189 a:after {
+  right: 0;
+  bottom: 0;
+  border-right: 3px solid #03e9f4;
+  border-bottom: 3px solid #03e9f4;
+  -webkit-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+.snip1189 a:hover,
+.snip1189 .current a {
+  color: #ffffff;
+}
+.snip1189 a:hover:before,
+.snip1189 .current a:before,
+.snip1189 a:hover:after,
+.snip1189 .current a:after {
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  opacity: 1;
 }
