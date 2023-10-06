@@ -34,34 +34,6 @@ function toggleGoToTopButton() {
   }
 }
 
-// smooth scroll
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
-function scrollToAbout() {
-  window.scrollTo({ top: 760, behavior: "smooth" });
-}
-
-function scrollToSchedule() {
-  window.scrollTo({ top: 1430, behavior: "smooth" });
-}
-
-function scrollToPrizes() {
-  window.scrollTo({ top: 2500, behavior: "smooth" });
-}
-
-function scrollToFaq() {
-  window.scrollTo({ top: 5670, behavior: "smooth" });
-}
-
-function scrollToGallery() {
-  window.scrollTo({ top: 3270, behavior: "smooth" });
-}
-
-function scrollToSponsor() {
-  window.scrollTo({ top: 4800, behavior: "smooth" });
-}
-
 // faqs
 const faqItems = document.querySelectorAll('.faq');
 
