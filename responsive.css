@@ -273,6 +273,10 @@
     }
 
     @media screen and (max-width: 480px) {
+        #bgvideo{
+            filter: grayscale(70%);
+            filter: brightness(1.6);
+        }
         .versionbeta_logo img {
             width: 550px;
             height: 220px;
