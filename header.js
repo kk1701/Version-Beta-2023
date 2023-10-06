@@ -2,7 +2,7 @@
   // Function to hide the navigation menu on mobile
   function hideNavMenu() {
     var checkbox = document.getElementById("check");
-    if (window.innerWidth <= 480) {
+    if (window.innerWidth <= 768) {
       // Check if the screen width is less than or equal to 768px (adjust as needed)
       checkbox.checked = false; // Uncheck the checkbox to hide the menu
     }

@@ -77,7 +77,7 @@
     #gallery_heading,
     #sponsor_heading,
     #gallery_heading,
-    #title_faq {
+    #faq_heading {
         font-size: 35px;
     }
 
@@ -537,7 +537,7 @@
             left: 30px;
         }
 
-        #title_faq {
+        #faq_heading {
             font-size: 65px;
             position: relative;
             top: 750px;
