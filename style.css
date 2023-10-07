@@ -551,6 +551,7 @@ header div ul li button {
   position: relative;
   top: 200px;
   left: 150px;
+  box-shadow: none;
 }
 
 .version {
@@ -571,7 +572,7 @@ header div ul li button {
 .version-beta {
   display: inline-block;
   opacity: 0;
-  filter: blur(4px);
+  /* filter: blur(4px); */
 }
 
 .version-beta:nth-child(1) {
@@ -1734,17 +1735,17 @@ body {
 
 @keyframes float {
   0% {
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
     transform: translatey(0px);
   }
 
   50% {
-    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
     transform: translatey(-25px);
   }
 
   100% {
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
     transform: translatey(0px);
   }
 }
@@ -1936,7 +1937,7 @@ body {
   width: 100vw;
   width: 105vw;
   color: white;
-  background-color: rgba(11, 32, 70, 0.541);
+  background-color: rgba(11, 32, 70, 0.9);
   min-height: 50vh;
 }
 
@@ -2268,7 +2269,7 @@ a {
 }
 
 nav {
-  background: #00082c;
+  background: rgba(11, 32, 70, 1);
   height: 80px;
   width: 100vw;
   position: fixed;
