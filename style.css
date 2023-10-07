@@ -1685,12 +1685,12 @@ body {
 
 .register_here {
   display: block;
-  width: 180px;
+  width: 250px;
   height: 52px;
   line-height: 50px;
   font-weight: bold;
   text-decoration: none;
-  background: red;
+  background: #3770ff;
   text-align: center;
   color: #fff;
   border-radius: 15px;
@@ -1717,20 +1717,20 @@ body {
   top: calc(50% - 15px);
   left: calc(50% - 15px);
   transform: rotate(-45deg);
-  fill: red;
+  fill: #3770ff;
   transition: all .35s;
 }
 
 .register_here:hover {
-  width: 200px;
-  border: 3px solid red;
+  width: 250px;
+  border: 3px solid #3770ff;
   background: transparent;
   color: white;
   font-weight: bold;
 }
 
 .register_here:hover+.icon {
-  border: 3px solid red;
+  border: 3px solid #3770ff;
   right: -25%;
 }
 
