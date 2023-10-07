@@ -342,13 +342,13 @@
 
         .register_here {
             font-size: 30px;
-            width: 260px;
+            width: 340px;
             height: 60px;
 
         }
         
         .register_here:hover{
-            width: 260px;
+            width: 340px;
         }
 
         .link_wrapper {
