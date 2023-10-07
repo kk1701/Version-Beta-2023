@@ -289,13 +289,6 @@
             font-size: 30px;
         }
 
-        .register_here{
-            font-size: 30px;
-            width: 260px;
-            height: 60px;
-
-        }
-
         .link_wrapper {
             position: relative;
             top: 50px;
@@ -342,13 +335,13 @@
 
         .register_here {
             font-size: 30px;
-            width: 340px;
+            width: 380px;
             height: 60px;
 
         }
         
         .register_here:hover{
-            width: 340px;
+            width: 380px;
         }
 
         .link_wrapper {

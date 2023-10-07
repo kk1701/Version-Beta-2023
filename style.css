@@ -1262,12 +1262,12 @@ header div ul li button {
   position: relative;
   justify-content: center;
   align-items: center;
-  margin-top: 6rem;
+  margin-top: 4rem;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 350px));
   column-gap: 40px;
-  row-gap: 60px;
+  row-gap: 30px;
   overflow: hidden;
   padding-left: 7rem;
   top: 110px;
@@ -2285,6 +2285,10 @@ label.logo {
   padding: 0 50px;
 }
 
+label.logo:hover{
+  cursor: pointer;
+}
+
 /* nav ul{
   float: right;
   margin-right: 20px;
@@ -2500,4 +2504,8 @@ li:hover a:before{
   -webkit-transform: translate(0%, 0%);
   transform: translate(0%, 0%);
   opacity: 1;
+}
+
+.snip1189 a:hover{
+  cursor: pointer;
 }
