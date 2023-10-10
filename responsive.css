@@ -52,7 +52,7 @@
     }
 
     .register_here {
-        width: 180px;
+        width: 250px;
         height: 50px;
         font-size: 20px;
         position: relative;
@@ -276,6 +276,8 @@
         #bgvideo{
             filter: grayscale(80%);
             filter: brightness(1.2);
+            /* filter: grayscale(70%); */
+            filter: brightness(0.7);
         }
         .versionbeta_logo img {
             width: 550px;
@@ -287,13 +289,6 @@
             position: relative;
             right: 150px;
             font-size: 30px;
-        }
-
-        .register_here{
-            font-size: 30px;
-            width: 260px;
-            height: 60px;
-
         }
 
         .link_wrapper {
@@ -342,13 +337,13 @@
 
         .register_here {
             font-size: 30px;
-            width: 260px;
+            width: 380px;
             height: 60px;
 
         }
         
         .register_here:hover{
-            width: 260px;
+            width: 380px;
         }
 
         .link_wrapper {
