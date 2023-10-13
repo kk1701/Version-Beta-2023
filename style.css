@@ -647,7 +647,7 @@ header div ul li button {
   font-weight: bold;
 }
 
-.timer {
+/* .timer {
   height: 100px;
   width: 400px;
   padding: 5px 5px;
@@ -655,7 +655,7 @@ header div ul li button {
   position: relative;
   top: 165px;
   left: 920px;
-}
+} */
 
 /* .timer {
   height: 100px;
@@ -667,14 +667,14 @@ header div ul li button {
   left: 950px;
 } */
 
-.timeleft {
+/* .timeleft {
   display: flex;
   gap: 22px;
   position: absolute;
   left: 56px;
   top: 60px;
   font-size: 18px;
-}
+} */
 
 .hours,
 .seconds,

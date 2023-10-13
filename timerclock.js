@@ -1,86 +1,41 @@
-const countdownDate = new Date("October 25, 2023 00:00:00").getTime();  
+window.addEventListener('load', (event) => {
+	const second = 1000,
+		minute = second * 60,
+		hour = minute * 60,
+		day = hour * 24;
 
+	var today = new Date('Oct 02, 2023');
+	var newdate = new Date();
 
-const countdownInterval = setInterval(function () {
-    const currentDate = new Date().getTime();
-    const timeLeft = countdownDate - currentDate;
+	let countDown = new Date('Oct 25, 2023');
+	// const timerCon=document.querySelector()
+	setInterval(function () {
+		let now = new Date().getTime(),
+			distance = countDown - now;
+		if (distance < 0) {
+			distance = 0;
+		}
+		
+		(document.getElementById('days').innerText = Math.floor(distance / day)),
+			(document.getElementById('hours').innerText = Math.floor(
+				(distance % day) / hour
+			)),
+			(document.getElementById('minutes').innerText = Math.floor(
+				(distance % hour) / minute
+			)),
+			(document.getElementById('seconds').innerText = Math.floor(
+				(distance % minute) / second
+			));
 
-    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+			if(distance===0){
+				document.getElementById('timerContainer').classList.add('hideThis');
+				document.getElementById('regStatus').innerText="Registrations Closed"
+			}
+			
+	}, second);
 
-    const countdownElement = document.getElementById("clock");
-
-    if(days<10){
-        if(hours<10){
-            if(minutes<10){
-                if(seconds<10){
-                    countdownElement.innerHTML = `0${days} : 0${hours} : 0${minutes} : 0${seconds}`;
-                }else{
-                    countdownElement.innerHTML = `0${days} : 0${hours} : 0${minutes} : ${seconds}`;
-                }
-            }else{
-                if(seconds<10){
-                    countdownElement.innerHTML = `0${days} : 0${hours} : ${minutes} : 0${seconds}`;
-                }else{
-                    countdownElement.innerHTML = `0${days} : 0${hours} : ${minutes} : ${seconds}`;
-                }
-            }
-        }else{
-            if(minutes<10){
-                if(seconds<10){
-                    countdownElement.innerHTML = `0${days} : ${hours} : 0${minutes} : 0${seconds}`;
-                }else{
-                    countdownElement.innerHTML = `0${days} : ${hours} : 0${minutes} : ${seconds}`;
-                }
-            }else{
-                if(seconds<10){
-                    countdownElement.innerHTML = `0${days} : ${hours} : ${minutes} : 0${seconds}`;
-                }else{
-                    countdownElement.innerHTML = `0${days} : ${hours} : ${minutes} : ${seconds}`;
-                }
-            }
-        }
-    }else{
-        if(hours<10){
-            if(minutes<10){
-                if(seconds<10){
-                    countdownElement.innerHTML = `${days} : 0${hours} : 0${minutes} : 0${seconds}`;
-                }else{
-                    countdownElement.innerHTML = `${days} : 0${hours} : 0${minutes} : ${seconds}`;
-                }
-            }else{
-                if(seconds<10){
-                    countdownElement.innerHTML = `${days} : 0${hours} : ${minutes} : 0${seconds}`;
-                }else{
-                    countdownElement.innerHTML = `${days} : 0${hours} : ${minutes} : ${seconds}`;
-                }
-            }
-        }else{
-            if(minutes<10){
-                if(seconds<10){
-                    countdownElement.innerHTML = `${days} : ${hours} : 0${minutes} : 0${seconds}`;
-                }else{
-                    countdownElement.innerHTML = `${days} : ${hours} : 0${minutes} : ${seconds}`;
-                }
-            }else{
-                if(seconds<10){
-                    countdownElement.innerHTML = `${days} : ${hours} : ${minutes} : 0${seconds}`;
-                }else{
-                    countdownElement.innerHTML = `${days} : ${hours} : ${minutes} : ${seconds}`;
-                }
-            }
-        }
-    }
-    
-
-    if (timeLeft < 0) {
-        clearInterval(countdownInterval);
-        countdownElement.innerHTML = "00 : 00 : 00 : 00";
-    }
-}, 1000);
-
-
-const colon = document.getElementsByClassName("colon");
-colon.style.color = "red";
+	if (window.innerWidth < 799) {
+		document.querySelector('.wrapper-timer').style.height =
+			window.innerHeight + 'px';
+	}
+});
