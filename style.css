@@ -624,9 +624,9 @@ header div ul li button {
 
 .clock_desc {
   position: absolute;
-  right: 210px;
-  top: 330px;
-  font-size: 18px;
+  right: 22%;
+  top: 43%;
+  font-size: 22px;
 }
 
 #clock {
@@ -2518,3 +2518,6 @@ li:hover a:before{
 .snip1189 a:hover{
   cursor: pointer;
 }
+
+
+
