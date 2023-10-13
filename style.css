@@ -4,6 +4,8 @@
   padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:100,200,300,400,500,600,700,800,900|Barlow+Semi+Condensed:100,200,300,400,500,600,700,800,900|Barlow:100,200,300,400,500,600,700,800,900&display=swap');
+
 
 html {
   scroll-padding-top: 4rem;
