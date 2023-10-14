@@ -52,14 +52,14 @@
     }
 
     .register_here {
-        width: 250px;
+        width: 330px;
         height: 50px;
         font-size: 20px;
         position: relative;
         left: 10px;
     }
 
-    .clock_desc {
+    /* .clock_desc {
         position: absolute;
         top: 300px;
         right: 150px;
@@ -69,7 +69,7 @@
         position: absolute;
         top: 350px;
         left: 650px;
-    }
+    } */
 
     #about,
     #schedule_heading,
@@ -206,11 +206,11 @@
         right: 120px;
     }
 
-    .timer {
+    /* .timer {
         position: absolute;
         left: 520px;
         top: 350px;
-    }
+    } */
 
     .about_page {
         display: flex;
@@ -305,7 +305,7 @@
             align-items: center;
         }
 
-        .clock_desc {
+        /* .clock_desc {
             width: 300px;
             position: absolute;
             left: 550px;
@@ -326,7 +326,7 @@
             top: 40px;
             left: 30px;
             font-size: 24px;
-        }
+        } */
 
         .right {
             position: relative;
@@ -337,13 +337,13 @@
 
         .register_here {
             font-size: 30px;
-            width: 380px;
+            width: 420px;
             height: 60px;
 
         }
         
         .register_here:hover{
-            width: 380px;
+            width: 4200px;
         }
 
         .link_wrapper {
@@ -360,7 +360,7 @@
             align-items: center;
         }
 
-        .clock_desc {
+        /* .clock_desc {
             width: 300px;
             position: absolute;
             left: 550px;
@@ -381,7 +381,7 @@
             top: 40px;
             left: 30px;
             font-size: 24px;
-        }
+        } */
 
         .right {
             position: relative;

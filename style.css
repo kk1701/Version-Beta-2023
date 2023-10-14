@@ -1686,7 +1686,7 @@ body {
 
 .register_here {
   display: block;
-  width: 250px;
+  width: 330px;
   height: 52px;
   line-height: 50px;
   font-weight: bold;
@@ -1723,7 +1723,7 @@ body {
 }
 
 .register_here:hover {
-  width: 250px;
+  width: 330px;
   border: 3px solid #3770ff;
   background: transparent;
   color: white;
@@ -2522,4 +2522,36 @@ li:hover a:before{
 }
 
 
+.link_wrapper{
+  display: flex;
+  align-items: center;
+}
 
+.logo_devfolio {
+  width: 24px;
+  height: auto;
+  margin-right: 10px; /* Add some spacing between the logo and text */
+}
+
+.logo-text {
+  font-size: 18px; /* Adjust the font size as needed */
+  color: #fff; /* Adjust the text color as needed */
+}
+
+.link_wrapper {
+  text-align: center; /* Center align the content */
+}
+
+.logo_devfolio {
+  width: 24px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle; /* Vertically center the logo */
+}
+
+.logo-text {
+  font-size: 18px; /* Adjust the font size as needed */
+  color: #fff; /* Adjust the text color as needed */
+  display: inline-block;
+  vertical-align: middle; /* Vertically center the text */
+}
