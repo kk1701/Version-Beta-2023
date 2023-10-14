@@ -70,6 +70,12 @@
         top: 350px;
         left: 650px;
     } */
+    
+    .timerContainer{
+        position: absolute;
+        top: 350px;
+        left: 650px;
+    }
 
     #about,
     #schedule_heading,
@@ -211,6 +217,12 @@
         left: 520px;
         top: 350px;
     } */
+    
+    .timerContainer{
+        position: absolute;
+        left: 520px;
+        top: 350px;   
+    }
 
     .about_page {
         display: flex;
@@ -328,11 +340,11 @@
             font-size: 24px;
         } */
 
-        .right {
+        /* .right {
             position: relative;
             right: 350px;
             top: 80px;
-        }
+        } */
 
 
         .register_here {
@@ -343,7 +355,7 @@
         }
         
         .register_here:hover{
-            width: 4200px;
+            width: 420px;
         }
 
         .link_wrapper {

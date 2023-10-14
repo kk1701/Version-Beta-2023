@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./responsive.css">
-    <link rel="stylesheet" href="./timer.css">
+    
 
     <script type="text/javascript" src="rocket.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -126,31 +126,35 @@
       </div>
       
       <div class="right">
-        <p class="i__c__o" id="regStatus" style="margin-top: 1rem;">Registration Ends In</p>
-					<ul class="timer__content" id="timerContainer">
-						<li class="timer__item">
-							<p class="timer__name">days</p>
-							<span id="days" class="timer__number"></span>
-						</li>
-						<li class="timer__item">
-							<p class="timer__name">hours</p>
-							<span id="hours" class="timer__number"></span>
-						</li>
-						<li class="timer__item">
-							<p class="timer__name">mins</p>
-							<span id="minutes" class="timer__number"></span>
-						</li>
-						<li class="timer__item">
-							<p class="timer__name">secs</p>
-							<span id="seconds" class="timer__number"></span>
-						</li>
-					</ul>
+          <div class="wrapper_timer">
+            <div class="">
+              <h1 class="title_timer">Registration Ends in...</h1>
+              <div class="countdown-container">
+                <div>
+                  <p id="days" class="big-text">0</p>
+                  <span>Days</span>
+                </div>
+                <div>
+                 <p id="hours" class="big-text">0</p>
+                 <span>Hours</span>
+               </div>
+               <div>
+                 <p id="min" class="big-text">0</p>
+                 <span>Min</span>
+               </div>
+               <div>
+                 <p id="sec" class="big-text">0</p>
+                 <span>Sec</span>
+               </div>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
     </section>
 
-    <script src="./timerclock.js"></script>
+    <script src="./timer.js"></script>
 
     <h2 id="about">ABOUT</h2>
     <section class="about_page" >
