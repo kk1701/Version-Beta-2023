@@ -295,11 +295,14 @@
             width: 550px;
             height: 220px;
             position: relative;
+            top: 40px;
+            left: 10px;
         }
 
         .version span {
             position: relative;
             right: 150px;
+            top: 20px;
             font-size: 30px;
         }
 
@@ -351,8 +354,8 @@
 
         .link_wrapper {
             position: relative;
-            top: 50px;
-            right: 60px;
+            top: 100px;
+            right: 30px;
         }
 
         .left {
@@ -397,7 +400,7 @@
         .wrapper_timer{
             position: relative;
             top: 100px;
-            right: 220px;
+            right: 180px;
             width: 500px;
         }
         .title_timer{
@@ -419,13 +422,13 @@
             font-size: 65px;
             position: relative;
             top: 650px;
-            left: 210px;
+            left: 230px;
         }
 
         .about_page {
             position: relative;
             top: 700px;
-            left: 210px;
+            left: 230px;
         }
 
         .about_page div p {
@@ -440,14 +443,14 @@
         #schedule_heading {
             position: relative;
             top: 800px;
-            left: 210px;
+            left: 240px;
             font-size: 65px;
         }
 
         .schedule {
             position: relative;
             top: 900px;
-            left: 135px;
+            left: 145px;
         }
 
         .schedule_tabs {
@@ -522,13 +525,13 @@
             font-size: 65px;
             position: relative;
             top: 1050px;
-            left: 210px;
+            left: 240px;
         }
 
         .prizes {
             position: relative;
             top: 800px;
-            left: 220px;
+            left: 240px;
             /* height: 00px; */
         }
 
@@ -536,14 +539,14 @@
             font-size: 65px;
             position: relative;
             top: 670px;
-            left: 210px;
+            left: 240px;
         }
 
         .gallery {
             display: block;
             position: relative;
             top: 1000px;
-            left: 20px;
+            left: 60px;
         }
 
         .gallery__item {
@@ -562,13 +565,13 @@
             font-size: 65px;
             position: relative;
             top: 1100px;
-            left: 30px;
+            left: 80px;
         }
 
         .sponsors {
             position: relative;
             top: 1100px;
-            left: 30px;
+            left: 60px;
             display: grid;
             grid-template-columns: 400px;
         }
@@ -577,13 +580,13 @@
             font-size: 65px;
             position: relative;
             top:1250px;
-            left: 30px;
+            left: 80px;
         }
 
         .faq_section {
             position: relative;
             top: 1300px;
-            left: 20px;
+            left: 60px;
         }
 
         .faq {
@@ -599,7 +602,7 @@
         .footer-container-main {
             position: relative;
             top: 1400px;
-            width: 800px;
+            width: 900px;
         }
     }
 }
