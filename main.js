@@ -61,4 +61,3 @@ faqItems.forEach((item) => {
     });
   });
 });
-
