@@ -2390,10 +2390,10 @@ li:hover a:before{
   nav{
     position: fixed ;
     width: 100%;
-    height: 90px;
+    height: 70px;
   }
   nav label img{
-    height: 100px;
+    height: 60px;
   }
   
 
