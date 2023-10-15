@@ -77,4 +77,11 @@ function scrollToFaq() {
   });
 }
 
+function hideOptions() {
+  const checkbox = document.getElementById('check');
+  if (checkbox.checked) {
+      checkbox.checked = false;
+  }
+}
+
 
