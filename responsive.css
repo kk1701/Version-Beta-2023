@@ -303,18 +303,8 @@
             font-size: 30px;
         }
 
-        .link_wrapper {
-            position: relative;
-            top: 50px;
-            right: 30px;
-        }
-
-        .left {
-            position: relative;
-            left: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        #home_page{
+            height: 400px;
         }
 
         /* .clock_desc {
@@ -349,9 +339,10 @@
 
         .register_here {
             font-size: 30px;
-            width: 420px;
+            width: 320px;
             height: 60px;
-
+            position: relative;
+            right: 50px;
         }
         
         .register_here:hover{
@@ -361,16 +352,18 @@
         .link_wrapper {
             position: relative;
             top: 50px;
-            right: 30px;
+            right: 60px;
         }
 
         .left {
             position: relative;
-            left: 20px;
+            left: 60px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+
+
 
         /* .clock_desc {
             width: 300px;
@@ -401,18 +394,38 @@
             top: 80px;
         }
 
+        .wrapper_timer{
+            position: relative;
+            top: 100px;
+            right: 220px;
+            width: 500px;
+        }
+        .title_timer{
+            font-size: 25px;
+        }
+        .countdown-container{
+            display: flex;
+            gap: 15px;
+        }
+        .countdown-container div{
+            height: 100px;
+            width: 110px;
+            font-size: 32px;
+            padding-top: 5px;
+        }
+
 
         #about{
             font-size: 65px;
             position: relative;
             top: 650px;
-            left: 180px;
+            left: 210px;
         }
 
         .about_page {
             position: relative;
             top: 700px;
-            left: 180px;
+            left: 210px;
         }
 
         .about_page div p {
@@ -427,14 +440,14 @@
         #schedule_heading {
             position: relative;
             top: 800px;
-            left: 180px;
+            left: 210px;
             font-size: 65px;
         }
 
         .schedule {
             position: relative;
             top: 900px;
-            left: 120px;
+            left: 135px;
         }
 
         .schedule_tabs {
@@ -509,26 +522,27 @@
             font-size: 65px;
             position: relative;
             top: 1050px;
-            left: 180px;
+            left: 210px;
         }
 
         .prizes {
             position: relative;
-            top: 1000px;
-            left: 180px;
+            top: 800px;
+            left: 220px;
+            /* height: 00px; */
         }
 
         #gallery_heading {
             font-size: 65px;
             position: relative;
-            top: 1100px;
-            left: 180px;
+            top: 670px;
+            left: 210px;
         }
 
         .gallery {
             display: block;
             position: relative;
-            top: 400px;
+            top: 1000px;
             left: 20px;
         }
 
@@ -547,26 +561,28 @@
         #sponsor_heading {
             font-size: 65px;
             position: relative;
-            top: 600px;
+            top: 1100px;
             left: 30px;
         }
 
         .sponsors {
             position: relative;
-            top: 600px;
+            top: 1100px;
             left: 30px;
+            display: grid;
+            grid-template-columns: 400px;
         }
 
         #faq_heading {
             font-size: 65px;
             position: relative;
-            top: 750px;
+            top:1250px;
             left: 30px;
         }
 
         .faq_section {
             position: relative;
-            top: 850px;
+            top: 1300px;
             left: 20px;
         }
 
@@ -582,7 +598,7 @@
 
         .footer-container-main {
             position: relative;
-            top: 1000px;
+            top: 1400px;
             width: 800px;
         }
     }
