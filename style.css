@@ -1933,9 +1933,9 @@ body {
   justify-content: space-evenly;
   position: relative;
   top: 400px;
-  left: 55px;
-  right: 0;
-  margin-left: -290px;
+  /* left: 55px; */
+  /* right: 0; */
+  margin-left: -310px;
   margin-right: 280px;
   width: 100vw;
   width: 105vw;
@@ -2252,7 +2252,7 @@ a {
 @media (max-width: 822px) {
   .footer-container-main {
     position: relative;
-    left: 250px;
+    left: 285px;
   }
 
   .line {
