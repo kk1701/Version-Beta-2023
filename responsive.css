@@ -12,17 +12,16 @@
     }
 }
 
-
-
 @media screen and (max-width: 1150px) {
     body {
         overflow-x: hidden;
         /* background: url(./Assets/Screenshot\ \(31\).png);
         background-size: cover; */
         /* background-color: black; */
-
+    
     }
 
+    
     .header {
         position: fixed;
         z-index: 2;

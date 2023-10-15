@@ -1936,9 +1936,12 @@ body {
   left: 55px;
   right: 0;
   margin-left: -290px;
+  /* left: 55px; */
+  /* right: 0; */
+  margin-left: -340px;
   margin-right: 280px;
-  width: 100vw;
-  width: 105vw;
+  /* width: 100vw; */
+  width: 109vw;
   color: white;
   background-color: rgba(11, 32, 70, 0.9);
   min-height: 50vh;
@@ -2253,6 +2256,7 @@ a {
   .footer-container-main {
     position: relative;
     left: 250px;
+    left: 315px;
   }
 
   .line {
