@@ -1933,9 +1933,9 @@ body {
   justify-content: space-evenly;
   position: relative;
   top: 400px;
-  left: 55px;
-  right: 0;
-  margin-left: -290px;
+  /* left: 55px; */
+  /* right: 0; */
+  margin-left: -310px;
   margin-right: 280px;
   width: 100vw;
   width: 105vw;
@@ -2252,7 +2252,7 @@ a {
 @media (max-width: 822px) {
   .footer-container-main {
     position: relative;
-    left: 250px;
+    left: 285px;
   }
 
   .line {
@@ -2390,10 +2390,10 @@ li:hover a:before{
   nav{
     position: fixed ;
     width: 100%;
-    height: 90px;
+    height: 74px;
   }
   nav label img{
-    height: 100px;
+    height: 60px;
   }
   
 
@@ -2407,7 +2407,7 @@ li:hover a:before{
     width: 100%;
     height: 100%;
     background: #00082c;
-    top: 80px;
+    top: 70px;
     left: -100%;
     text-align: center;
     transition: all .5s;

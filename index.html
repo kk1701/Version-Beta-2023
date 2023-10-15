@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+ 
     <title>Version Beta</title>
 
     <link rel="stylesheet" href="./style.css">
@@ -72,13 +72,13 @@
         <label class="logo"><img src="Assets/ISTE logo.svg"></label>
       </a>
       <ul class="snip1189">
-        <li><a onclick="scrollToTop()">HOME</a></li>
-        <li><a onclick="scrollToAbout()">ABOUT</a></li>
-        <li><a onclick="scrollToSchedule()">SCHEDULE</a></li>
-        <li><a onclick="scrollToPrizes()">PRIZES</a></li>
-        <li><a onclick="scrollToGallery()">GALLERY</a></li>
-        <li><a onclick="scrollToSponsor()">SPONSORS</a></li>
-        <li><a onclick="scrollToFaq()">FAQS</a></li>
+        <li><a onclick="scrollToTop();hideOptions();">HOME</a></li>
+        <li><a onclick="scrollToAbout();hideOptions();">ABOUT</a></li>
+        <li><a onclick="scrollToSchedule();hideOptions();">SCHEDULE</a></li>
+        <li><a onclick="scrollToPrizes();hideOptions();">PRIZES</a></li>
+        <li><a onclick="scrollToGallery();hideOptions();">GALLERY</a></li>
+        <li><a onclick="scrollToSponsor();hideOptions();">SPONSORS</a></li>
+        <li><a onclick="scrollToFaq();hideOptions();">FAQS</a></li>
       </ul>
     </nav>
 
@@ -108,7 +108,7 @@
                   <path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 
                               104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 
                               55.41 0 0 1 50.58 55.34z"></path>
-                  </svg><span class="logo-text">Apply with Devfolio</span></a>
+                  </svg><span id="logo-text">Apply with Devfolio</span></a>
             <div class="icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
