@@ -1687,7 +1687,7 @@ body {
 
 .register_here {
   display: block;
-  width: 330px;
+  width: 300px;
   height: 52px;
   line-height: 50px;
   font-weight: bold;
@@ -1724,7 +1724,7 @@ body {
 }
 
 .register_here:hover {
-  width: 330px;
+  width: 280px;
   border: 3px solid #3770ff;
   background: transparent;
   color: white;
@@ -1733,7 +1733,7 @@ body {
 
 .register_here:hover+.icon {
   border: 3px solid #3770ff;
-  right: -25%;
+  right: -20%;
 }
 
 @keyframes float {
@@ -1933,6 +1933,9 @@ body {
   justify-content: space-evenly;
   position: relative;
   top: 400px;
+  left: 55px;
+  right: 0;
+  margin-left: -290px;
   /* left: 55px; */
   /* right: 0; */
   margin-left: -340px;
@@ -2252,6 +2255,7 @@ a {
 @media (max-width: 822px) {
   .footer-container-main {
     position: relative;
+    left: 250px;
     left: 315px;
   }
 
@@ -2390,12 +2394,16 @@ li:hover a:before{
   nav{
     position: fixed ;
     width: 100%;
-    height: 74px;
+    height: 110px;
   }
   nav label img{
     height: 60px;
   }
   
+  .fas{
+    height: 120px;
+    width: 50px;
+  }
 
   .checkbtn {
     display: block;
@@ -2407,7 +2415,7 @@ li:hover a:before{
     width: 100%;
     height: 100%;
     background: #00082c;
-    top: 70px;
+    top: 80px;
     left: -100%;
     text-align: center;
     transition: all .5s;
@@ -2534,10 +2542,6 @@ li:hover a:before{
   margin-right: 10px; /* Add some spacing between the logo and text */
 }
 
-.logo-text {
-  font-size: 18px; /* Adjust the font size as needed */
-  color: #fff; /* Adjust the text color as needed */
-}
 
 .link_wrapper {
   text-align: center; /* Center align the content */
@@ -2565,22 +2569,31 @@ li:hover a:before{
   padding:0;
   box-sizing:border-box;
 }
+
+#home_page{
+  height: 1000px;
+}
+
 .wrapper_timer {
   /* background-image:url("images/bg.jpg"); */
   /* background-color: blueviolet;
   background-repeat: no-repeat;
   background-size:cover;
   background-position:top; */
+  /* background-color: blueviolet; */
   display:flex;
   flex-direction:column;
   align-items:center;
+  flex-wrap: wrap;
   font-family: 'Poppins', sans-serif;
   position: relative;
-  top: -340px;
+  top: 40px;
+  /* bottom: 30px; */
+  left: 800px;
   margin-right: 80px;
   overflow: hidden;
-  width: 100%;
-  height: 100%;
+  width: 500px;
+  height: 180px;
 }   
 /* .overlay{
   position:absolute;
@@ -2606,7 +2619,7 @@ li:hover a:before{
   margin:10px;
   text-align:center;
   color:#fff;
-  width:100%;
+  /* width:100%; */
   font-weight: 300;
   letter-spacing:2px;
   font-size: 18px;
@@ -2617,13 +2630,13 @@ li:hover a:before{
   font-size:6rem;
   letter-spacing:2rem;
 }
-.wrapper_timer{
+/* .wrapper_timer{
   display:flex;
   align-items:center;
   justify-content:center;
   flex-wrap: wrap;
-  min-height:110vh;
-}
+  height: 400px;
+} */
 .countdown-container  div{
   margin:0 8px;
   text-align: center;
