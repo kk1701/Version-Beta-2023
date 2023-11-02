@@ -2641,6 +2641,11 @@ li:hover a:before{
   }
 }
 @media (max-width:767px){
+  
+  .wrapper_timer{
+    margin-top: -130px;
+  }
+
   .countdown-container{
     flex-wrap: wrap;
   }
